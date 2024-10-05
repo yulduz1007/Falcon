@@ -1,0 +1,243 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+    <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Input group</h3>
+                  <p class="mb-0">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p><a class="btn btn-link btn-sm ps-0 mt-2" href="https://getbootstrap.com/docs/5.1/forms/input-group" target="_blank">Input group on Bootstrap<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Basic example</h5>
+                  <p class="mb-0 mt-2 mb-0">Place one add-on or button on either side of an input. You may also place one on both sides of an input. Remember to place <code>label</code>'s outside the input group.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-9d88300a-e84f-4f8a-b51d-cffc1ad38330" type="button" role="tab" aria-controls="dom-9d88300a-e84f-4f8a-b51d-cffc1ad38330" aria-selected="true" id="tab-dom-9d88300a-e84f-4f8a-b51d-cffc1ad38330">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-27d213bb-d281-471c-88b3-e60248221f84" type="button" role="tab" aria-controls="dom-27d213bb-d281-471c-88b3-e60248221f84" aria-selected="false" id="tab-dom-27d213bb-d281-471c-88b3-e60248221f84">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-9d88300a-e84f-4f8a-b51d-cffc1ad38330" id="dom-9d88300a-e84f-4f8a-b51d-cffc1ad38330">
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">@</span>
+                    <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                  </div>
+                  <div class="input-group mb-3">
+                    <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" /><span class="input-group-text" id="basic-addon2">@example.com</span>
+                  </div>
+                  <label class="form-label" for="basic-url">Your vanity URL</label>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    <input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" />
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text">$</span>
+                    <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)" /><span class="input-group-text">.00</span>
+                  </div>
+                  <div class="input-group"><span class="input-group-text">With textarea</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>.
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-27d213bb-d281-471c-88b3-e60248221f84" id="dom-27d213bb-d281-471c-88b3-e60248221f84">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot; aria-describedby=&quot;basic-addon2&quot; /&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
+&lt;/div&gt;
+&lt;label class=&quot;form-label&quot; for=&quot;basic-url&quot;&gt;Your vanity URL&lt;/label&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;basic-url&quot; type=&quot;text&quot; aria-describedby=&quot;basic-addon3&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Amount (to the nearest dollar)&quot; /&gt;&lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;With textarea&lt;/span&gt;
+  &lt;textarea class=&quot;form-control&quot; aria-label=&quot;With textarea&quot;&gt;&lt;/textarea&gt;.
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Wrapping</h5>
+                  <p class="mb-0 mt-2 mb-0">Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>.flex-nowrap</code></p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-09c0c979-9f4c-4dc3-8fa8-b9c4669c7c9d" type="button" role="tab" aria-controls="dom-09c0c979-9f4c-4dc3-8fa8-b9c4669c7c9d" aria-selected="true" id="tab-dom-09c0c979-9f4c-4dc3-8fa8-b9c4669c7c9d">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-aa68f334-3cec-4996-969d-0d51bd765bef" type="button" role="tab" aria-controls="dom-aa68f334-3cec-4996-969d-0d51bd765bef" aria-selected="false" id="tab-dom-aa68f334-3cec-4996-969d-0d51bd765bef">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-09c0c979-9f4c-4dc3-8fa8-b9c4669c7c9d" id="dom-09c0c979-9f4c-4dc3-8fa8-b9c4669c7c9d">
+                  <div class="input-group flex-nowrap"><span class="input-group-text" id="addon-wrapping">@</span>
+                    <input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-aa68f334-3cec-4996-969d-0d51bd765bef" id="dom-aa68f334-3cec-4996-969d-0d51bd765bef">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;input-group flex-nowrap&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;addon-wrapping&quot;&gt;@&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;addon-wrapping&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Sizing</h5>
+                  <p class="mb-0 mt-2 mb-0">Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-90c057bc-96d7-442b-b97c-11899fdf0451" type="button" role="tab" aria-controls="dom-90c057bc-96d7-442b-b97c-11899fdf0451" aria-selected="true" id="tab-dom-90c057bc-96d7-442b-b97c-11899fdf0451">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-44e9f855-2de6-47a1-b95f-b3a282dc0c82" type="button" role="tab" aria-controls="dom-44e9f855-2de6-47a1-b95f-b3a282dc0c82" aria-selected="false" id="tab-dom-44e9f855-2de6-47a1-b95f-b3a282dc0c82">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-90c057bc-96d7-442b-b97c-11899fdf0451" id="dom-90c057bc-96d7-442b-b97c-11899fdf0451">
+                  <div class="input-group input-group-sm mb-3"><span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                    <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                    <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+                  </div>
+                  <div class="input-group input-group-lg"><span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                    <input class="form-control" type="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-44e9f855-2de6-47a1-b95f-b3a282dc0c82" id="dom-44e9f855-2de6-47a1-b95f-b3a282dc0c82">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;input-group input-group-sm mb-3&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;inputGroup-sizing-sm&quot;&gt;Small&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Sizing example input&quot; aria-describedby=&quot;inputGroup-sizing-sm&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;inputGroup-sizing-default&quot;&gt;Default&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Sizing example input&quot; aria-describedby=&quot;inputGroup-sizing-default&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group input-group-lg&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;inputGroup-sizing-lg&quot;&gt;Large&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Sizing example input&quot; aria-describedby=&quot;inputGroup-sizing-lg&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Checkboxes and Radios</h5>
+                  <p class="mb-0 mt-2 mb-0">Place any checkbox or radio option within an input group’s addon instead of text.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-acba7050-076d-4299-8eb0-f5248bfc533d" type="button" role="tab" aria-controls="dom-acba7050-076d-4299-8eb0-f5248bfc533d" aria-selected="true" id="tab-dom-acba7050-076d-4299-8eb0-f5248bfc533d">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-5403d4e5-5421-4324-a07a-b821106261b8" type="button" role="tab" aria-controls="dom-5403d4e5-5421-4324-a07a-b821106261b8" aria-selected="false" id="tab-dom-5403d4e5-5421-4324-a07a-b821106261b8">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-acba7050-076d-4299-8eb0-f5248bfc533d" id="dom-acba7050-076d-4299-8eb0-f5248bfc533d">
+                  <div class="input-group mb-3">
+                    <div class="input-group-text">
+                      <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input" />
+                    </div>
+                    <input class="form-control" type="text" aria-label="Text input with checkbox" />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <input class="form-check-input" type="radio" value="" aria-label="Radio button for following text input" />
+                    </div>
+                    <input class="form-control" type="text" aria-label="Text input with radio button" />
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-5403d4e5-5421-4324-a07a-b821106261b8" id="dom-5403d4e5-5421-4324-a07a-b821106261b8">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-text&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; value=&quot;&quot; aria-label=&quot;Checkbox for following text input&quot; /&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Text input with checkbox&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-text&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; value=&quot;&quot; aria-label=&quot;Radio button for following text input&quot; /&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Text input with radio button&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Multiple inputs</h5>
+                  <p class="mb-0 mt-2 mb-0">While multiple <code>input</code>s are supported visually, validation styles are only available for input groups with a single <code>input</code>.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-710c65bd-16af-45b8-949d-9cb3a8b7120f" type="button" role="tab" aria-controls="dom-710c65bd-16af-45b8-949d-9cb3a8b7120f" aria-selected="true" id="tab-dom-710c65bd-16af-45b8-949d-9cb3a8b7120f">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-7eca83f5-cf28-4096-984b-28ea0f7afdfc" type="button" role="tab" aria-controls="dom-7eca83f5-cf28-4096-984b-28ea0f7afdfc" aria-selected="false" id="tab-dom-7eca83f5-cf28-4096-984b-28ea0f7afdfc">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-710c65bd-16af-45b8-949d-9cb3a8b7120f" id="dom-710c65bd-16af-45b8-949d-9cb3a8b7120f">
+                  <div class="input-group"><span class="input-group-text">First and last name</span>
+                    <input class="form-control" type="text" aria-label="First name" />
+                    <input class="form-control" type="text" aria-label="Last name" />
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-7eca83f5-cf28-4096-984b-28ea0f7afdfc" id="dom-7eca83f5-cf28-4096-984b-28ea0f7afdfc">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;input-group&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;First and last name&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;First name&quot; /&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Last name&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Multiple Addons</h5>
+                  <p class="mb-0 mt-2 mb-0">Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-8d95fbe9-1f09-4d1e-9c72-f1fb5e3e47fb" type="button" role="tab" aria-controls="dom-8d95fbe9-1f09-4d1e-9c72-f1fb5e3e47fb" aria-selected="true" id="tab-dom-8d95fbe9-1f09-4d1e-9c72-f1fb5e3e47fb">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-1dedb3d0-c8bd-466e-8bdc-b07e147def96" type="button" role="tab" aria-controls="dom-1dedb3d0-c8bd-466e-8bdc-b07e147def96" aria-selected="false" id="tab-dom-1dedb3d0-c8bd-466e-8bdc-b07e147def96">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-8d95fbe9-1f09-4d1e-9c72-f1fb5e3e47fb" id="dom-8d95fbe9-1f09-4d1e-9c72-f1fb5e3e47fb">
+                  <div class="input-group mb-3"><span class="input-group-text">$</span><span class="input-group-text">0.00</span>
+                    <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)" />
+                  </div>
+                  <div class="input-group">
+                    <input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)" /><span class="input-group-text">$</span><span class="input-group-text">0.00</span>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-1dedb3d0-c8bd-466e-8bdc-b07e147def96" id="dom-1dedb3d0-c8bd-466e-8bdc-b07e147def96">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;input-group-text&quot;&gt;0.00&lt;/span&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Dollar amount (with dot and two decimal places)&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Dollar amount (with dot and two decimal places)&quot; /&gt;&lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;input-group-text&quot;&gt;0.00&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+{% endblock %}

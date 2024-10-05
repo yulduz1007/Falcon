@@ -1,0 +1,101 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+    <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Setting up configuration</h3>
+                  <p class="mb-0">Falcon has a global configuration system. You can change the theme settings with a single global javascript object.</p>
+                </div>
+              </div>
+            </div>
+    <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Setting configuration</h5>
+            </div>
+            <div class="card-body bg-light">
+              <h6>For Gulp based workflow</h6>
+              <p>Edit the <code>src/js/config.js</code> file.</p>
+              <h6>If you are not using Gulp based workflow</h6>
+              <p>Edit the <code>public/assets/js/config.js</code> file.</p>
+              <h6 class="fs-0">Configuration object:</h6>
+              <pre><code class="lang-js">const CONFIG = {
+  isNavbarVerticalCollapsed: false,
+  theme: "light",
+  isRTL: false,
+  isFluid: false,
+  navbarStyle: "transparent",
+  navbarPosition: "vertical",
+};</code></pre>
+            </div>
+          </div>
+    <div class="card">
+            <div class="card-header">
+              <h5>Available Options</h5>
+            </div>
+            <div class="card-body bg-light">
+              <div class="table-responsive">
+                <table class="table table-bordered border border-200 fs--1 mb-0">
+                  <thead class="bg-200 text-900">
+                    <tr>
+                      <th class="white-space-nowrap">Option</th>
+                      <th class="white-space-nowrap">Type</th>
+                      <th class="white-space-nowrap">Defaults</th>
+                      <th class="white-space-nowrap">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="white-space-nowrap">isNavbarVerticalCollapsed</td>
+                      <td class="white-space-nowrap"> <code>Boolean</code></td>
+                      <td class="white-space-nowrap"> <code>false</code></td>
+                      <td>Set <code>true</code> to make the vertical navbar stay collapsed when the page loads. </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap">theme</td>
+                      <td><code>string </code></td>
+                      <td class="white-space-nowrap"> <code>light </code></td>
+                      <td>This option is for setting up the default color mode (<code>dark</code> or <code>light</code>) for your project. Set <code>dark</code> to make the default color mode dark.</td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap">isRTL</td>
+                      <td><code>Boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>Use <code>true</code> to make the whole layout RTL (Right to Left). Recommended for languages such as Arabic, Hebrew, or other RTL languages.</td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap">isFluid</td>
+                      <td class="white-space-nowrap"> <code>Boolean </code></td>
+                      <td class="white-space-nowrap"> <code>false</code></td>
+                      <td>Set <code>true</code> to enable fluid mood. This will make the container full-width.</td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap">navbarStyle</td>
+                      <td class="white-space-nowrap"> <code>string </code></td>
+                      <td class="white-space-nowrap"> <code>transparent</code></td>
+                      <td>This option is for changing the vertical navigation styling. Available values:
+                        <ul class="mb-0">
+                          <li> <code>transparent</code></li>
+                          <li> <code>vibrant</code></li>
+                          <li> <code>inverted</code></li>
+                          <li> <code>card</code></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="white-space-nowrap">navbarPosition</td>
+                      <td class="white-space-nowrap"> <code>string </code></td>
+                      <td class="white-space-nowrap"> <code>vertical</code></td>
+                      <td>For setting the navbar position. Available values:
+                        <ul class="mb-0">
+                          <li><code>top</code></li>
+                          <li><code>vertical</code></li>
+                          <li><code>combo</code></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+{% endblock %}

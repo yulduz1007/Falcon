@@ -1,0 +1,152 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+      <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>File Uploader</h3>
+                  <p class="mt-2">Falcon uses <b>DropzoneJS</b> for file-uploader. DropzoneJS is an open-source library that provides drag & drop file uploads with image previews.</p><a class="btn btn-link ps-0 btn-sm" href="https://www.dropzonejs.com/" target="_blank"> Documentation for Dropzone<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+        <div class="card-header">
+          <div class="row flex-between-end">
+            <div class="col-auto align-self-center">
+              <h5 class="mb-0" data-anchor="data-anchor">Single File Upload</h5>
+              <p class="mb-0 mt-2 mb-0"><code>Dropzone </code>requires a valid server-side url for the file upload. You can easily pass it through <code>data-options </code>attribute like <code>data-options!={ url: 'valid/url'}</code></p>
+            </div>
+            <div class="col-auto ms-auto">
+              <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-3d983700-f76d-4f8c-9f1b-c1951c083168" type="button" role="tab" aria-controls="dom-3d983700-f76d-4f8c-9f1b-c1951c083168" aria-selected="true" id="tab-dom-3d983700-f76d-4f8c-9f1b-c1951c083168">Preview</button>
+                <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-0f9bd49c-f4bc-4658-8ea8-9a963b7a36c9" type="button" role="tab" aria-controls="dom-0f9bd49c-f4bc-4658-8ea8-9a963b7a36c9" aria-selected="false" id="tab-dom-0f9bd49c-f4bc-4658-8ea8-9a963b7a36c9">Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body bg-light">
+          <div class="tab-content">
+            <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-3d983700-f76d-4f8c-9f1b-c1951c083168" id="dom-3d983700-f76d-4f8c-9f1b-c1951c083168">
+              <div class="dropzone dropzone-single p-0" data-dropzone="data-dropzone" data-options='{"url":"valid/url","maxFiles":1,"dictDefaultMessage":"Choose or Drop a file here"}'>
+                <div class="fallback">
+                  <input type="file" name="file" />
+                </div>
+                <div class="dz-preview dz-preview-single">
+                  <div class="dz-preview-cover dz-complete"><img class="dz-preview-img" src="../../../assets/img/generic/image-file-2.png" alt="..." data-dz-thumbnail="" /><a class="dz-remove text-danger" href="#!" data-dz-remove="data-dz-remove"><span class="fas fa-times"></span></a>
+                    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+                    <div class="dz-errormessage m-1"><span data-dz-errormessage="data-dz-errormessage"></span></div>
+                  </div>
+                  <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+                </div>
+                <div class="dz-message" data-dz-message="data-dz-message">
+                  <div class="dz-message-text"><img class="me-2" src="../../../assets/img/icons/cloud-upload.svg" width="25" alt="" />Drop your file here</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-0f9bd49c-f4bc-4658-8ea8-9a963b7a36c9" id="dom-0f9bd49c-f4bc-4658-8ea8-9a963b7a36c9">
+              <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;dropzone dropzone-single p-0&quot; data-dropzone=&quot;data-dropzone&quot; data-options='{&quot;url&quot;:&quot;valid/url&quot;,&quot;maxFiles&quot;:1,&quot;dictDefaultMessage&quot;:&quot;Choose or Drop a file here&quot;}'&gt;
+    &lt;div class=&quot;fallback&quot;&gt;
+    &lt;input type=&quot;file&quot; name=&quot;file&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dz-preview dz-preview-single&quot;&gt;
+    &lt;div class=&quot;dz-preview-cover dz-complete&quot;&gt;&lt;img class=&quot;dz-preview-img&quot; src=&quot;../../../assets/img/generic/image-file-2.png&quot; alt=&quot;...&quot; data-dz-thumbnail=&quot;&quot; /&gt;&lt;a class=&quot;dz-remove text-danger&quot; href=&quot;#!&quot; data-dz-remove=&quot;data-dz-remove&quot;&gt;&lt;span class=&quot;fas fa-times&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;div class=&quot;dz-progress&quot;&gt;&lt;span class=&quot;dz-upload&quot; data-dz-uploadprogress=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;dz-errormessage m-1&quot;&gt;&lt;span data-dz-errormessage=&quot;data-dz-errormessage&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dz-progress&quot;&gt;&lt;span class=&quot;dz-upload&quot; data-dz-uploadprogress=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dz-message&quot; data-dz-message=&quot;data-dz-message&quot;&gt;
+    &lt;div class=&quot;dz-message-text&quot;&gt;&lt;img class=&quot;me-2&quot; src=&quot;../../../assets/img/icons/cloud-upload.svg&quot; width=&quot;25&quot; alt=&quot;&quot; /&gt;Drop your file here&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="card-header">
+          <div class="row flex-between-end">
+            <div class="col-auto align-self-center">
+              <h5 class="mb-0" data-anchor="data-anchor">Multiple File Upload</h5>
+            </div>
+            <div class="col-auto ms-auto">
+              <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-732ae4b0-2100-4223-a00a-49a9794c335e" type="button" role="tab" aria-controls="dom-732ae4b0-2100-4223-a00a-49a9794c335e" aria-selected="true" id="tab-dom-732ae4b0-2100-4223-a00a-49a9794c335e">Preview</button>
+                <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-8c5b3c06-a059-4da8-93c7-a9d6f0eef622" type="button" role="tab" aria-controls="dom-8c5b3c06-a059-4da8-93c7-a9d6f0eef622" aria-selected="false" id="tab-dom-8c5b3c06-a059-4da8-93c7-a9d6f0eef622">Code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body bg-light">
+          <div class="tab-content">
+            <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-732ae4b0-2100-4223-a00a-49a9794c335e" id="dom-732ae4b0-2100-4223-a00a-49a9794c335e">
+              <form class="dropzone dropzone-multiple p-0" id="my-awesome-dropzone" data-dropzone="data-dropzone" action="#!">
+                <div class="fallback">
+                  <input name="file" type="file" multiple="multiple" />
+                </div>
+                <div class="dz-message" data-dz-message="data-dz-message"> <img class="me-2" src="../../../assets/img/icons/cloud-upload.svg" width="25" alt="" />Drop your files here</div>
+                <div class="dz-preview dz-preview-multiple m-0 d-flex flex-column">
+                  <div class="d-flex media mb-3 pb-3 border-bottom btn-reveal-trigger"><img class="dz-image" src="../../../assets/img/generic/image-file-2.png" alt="..." data-dz-thumbnail="data-dz-thumbnail" />
+                    <div class="flex-1 d-flex flex-between-center">
+                      <div>
+                        <h6 data-dz-name="data-dz-name"></h6>
+                        <div class="d-flex align-items-center">
+                          <p class="mb-0 fs--1 text-400 lh-1" data-dz-size="data-dz-size"></p>
+                          <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+                        </div><span class="fs--2 text-danger" data-dz-errormessage="data-dz-errormessage"></span>
+                      </div>
+                      <div class="dropdown font-sans-serif">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal dropdown-caret-none" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-ellipsis-h"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-2"><a class="dropdown-item" href="#!" data-dz-remove="data-dz-remove">Remove File</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-8c5b3c06-a059-4da8-93c7-a9d6f0eef622" id="dom-8c5b3c06-a059-4da8-93c7-a9d6f0eef622">
+              <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;form class=&quot;dropzone dropzone-multiple p-0&quot; id=&quot;my-awesome-dropzone&quot; data-dropzone=&quot;data-dropzone&quot; action=&quot;#!&quot;&gt;
+    &lt;div class=&quot;fallback&quot;&gt;
+    &lt;input name=&quot;file&quot; type=&quot;file&quot; multiple=&quot;multiple&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dz-message&quot; data-dz-message=&quot;data-dz-message&quot;&gt; &lt;img class=&quot;me-2&quot; src=&quot;../../../assets/img/icons/cloud-upload.svg&quot; width=&quot;25&quot; alt=&quot;&quot; /&gt;Drop your files here&lt;/div&gt;
+    &lt;div class=&quot;dz-preview dz-preview-multiple m-0 d-flex flex-column&quot;&gt;
+    &lt;div class=&quot;d-flex media mb-3 pb-3 border-bottom btn-reveal-trigger&quot;&gt;&lt;img class=&quot;dz-image&quot; src=&quot;../../../assets/img/generic/image-file-2.png&quot; alt=&quot;...&quot; data-dz-thumbnail=&quot;data-dz-thumbnail&quot; /&gt;
+    &lt;div class=&quot;flex-1 d-flex flex-between-center&quot;&gt;
+    &lt;div&gt;
+      &lt;h6 data-dz-name=&quot;data-dz-name&quot;&gt;&lt;/h6&gt;
+      &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+        &lt;p class=&quot;mb-0 fs--1 text-400 lh-1&quot; data-dz-size=&quot;data-dz-size&quot;&gt;&lt;/p&gt;
+        &lt;div class=&quot;dz-progress&quot;&gt;&lt;span class=&quot;dz-upload&quot; data-dz-uploadprogress=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;&lt;span class=&quot;fs--2 text-danger&quot; data-dz-errormessage=&quot;data-dz-errormessage&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;dropdown font-sans-serif&quot;&gt;
+      &lt;button class=&quot;btn btn-link text-600 btn-sm dropdown-toggle btn-reveal dropdown-caret-none&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;&lt;span class=&quot;fas fa-ellipsis-h&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;div class=&quot;dropdown-menu dropdown-menu-end border py-2&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#!&quot; data-dz-remove=&quot;data-dz-remove&quot;&gt;Remove File&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/form&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="card-header">
+          <h5 class="mb-0">Stylesheet</h5>
+        </div>
+        <div class="card-body bg-light">
+          <pre class="scrollbar mt-2"><code class="language-html">&lt;link href=&quot;vendors/dropzone/dropzone.min.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
+        </div>
+        <div class="card-header">
+          <h5 class="mb-0">Javascript</h5>
+        </div>
+        <div class="card-body bg-light">
+          <pre class="scrollbar mt-2"><code class="language-html">&lt;script src=&quot;vendors/dropzone/dropzone.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+        </div>
+      <footer class="footer">
+        <div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
+          <div class="col-12 col-sm-auto text-center">
+            <p class="mb-0 text-600">Thank you for creating with Falcon <span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2021 &copy; <a href="https://themewagon.com">Themewagon</a></p>
+          </div>
+          <div class="col-12 col-sm-auto text-center">
+            <p class="mb-0 text-600">v3.4.0</p>
+          </div>
+        </div>
+      </footer>
+{% endblock %}

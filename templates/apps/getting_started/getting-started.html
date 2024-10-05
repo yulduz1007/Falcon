@@ -1,0 +1,56 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+          <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3 class="mb-0">Getting Started</h3>
+                </div>
+              </div>
+            </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Quick start</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Looking to start your project quickly? Just unzip the <code>Falcon-v3.4.0.zip</code>. We have precompiled and packaged everything in the <code>public</code> directory for you. Start editing the <code>public/pages/starter.html</code> with a text or code editor, save it, and open the file in your favourite browser to see the changes.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Setting up Build system</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p>Unzip the <code>Falcon-v3.4.0.zip</code> to any folder and open a command line or terminal at that location.
+                theme's dev tools require <a href="https://nodejs.org/en/" target="_blank">Node</a> and <a href="https://git-scm.com/" target="_blank">Git</a> . If you do not have them in your machine, please install their latest stable version from their corresponding website. As you have <span class="fw-black text-black">Node and Git installed and accessible from your terminal or command line</span>, install <a href="https://gulpjs.com/" target="_blank">Gulp CLI</a> package
+                globally with the following command:
+              </p>
+              <pre><code class="lang-html">npm i gulp-cli -g
+</code></pre>
+              <p class="mt-4">When you’re done, install the rest of the theme’s dependencies with:</p>
+              <pre><code class="lang-html">npm i
+</code></pre>
+              <p class="mt-4">Now run:</p>
+              <pre><code class="lang-html">gulp
+</code></pre>
+              <p class="mt-4">Running gulp will compile the SCSS, transpile the javascript, copy all required libraries form <code>node_modules</code> to the corresponding <code>public/assets/vendors </code> directory and will open a browser window to <code>public/</code></p>
+              <p>All of the following folders are monitored for changes, which will tell the browser to reload automatically after any changes are made:</p>
+              <pre><code class="lang-html">public/assets/fonts/
+public/assets/video/
+public/assets/img/
+public/vendors
+src/pug/
+src/scss/ 
+src/js/
+</code></pre>
+              <p class="mt-4">Now you can edit any <code>pug</code> file from <code>src/pug</code>, change SCSS variable with <code>scss/_user-variables.scss</code>, or write your own SCSS code in <code>scss/_user.scss</code> and add or update <code>javaScript</code> from <code>src/js</code> directory.</p>
+              <div class="alert alert-warning">Running the <code>gulp</code> command will discard and regenerate all the files in following directories:</div>
+              <pre><code class="lang-html">public/**/*.html
+public/assets/css/
+public/assets/js/
+public/vendors
+</code></pre>
+              <p class="mt-4">Hit <code>Ctrl+C</code> or just close the command line window to stop the server.</p>
+              <p>Happy editing!</p>
+            </div>
+          </div>
+{% endblock %}

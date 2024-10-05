@@ -1,0 +1,115 @@
+{% extends 'apps/base_include/base..html' %}
+{% block body %}
+    <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Advance Select</h3>
+                  <p class="mb-0">Falcon uses <b>Choices.js</b> for advance select. Choices.js is a lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency</p><a class="btn btn-link btn-sm ps-0 mt-2" href="https://github.com/Choices-js/Choices" target="_blank">Documentation for Choices<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+    <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Advance Select</h3>
+                  <p class="mb-0">Falcon uses <b>Choices.js</b> for advance select. Choices.js is a lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency</p><a class="btn btn-link btn-sm ps-0 mt-2" href="https://github.com/Choices-js/Choices" target="_blank">Documentation for Choices<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+      <div class="row flex-between-end">
+        <div class="col-auto align-self-center">
+          <h5 class="mb-0" data-anchor="data-anchor">Multiple Select Example</h5>
+        </div>
+        <div class="col-auto ms-auto">
+          <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+            <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-e96fc0d1-0c6d-4983-a0f7-e845150e9c56" type="button" role="tab" aria-controls="dom-e96fc0d1-0c6d-4983-a0f7-e845150e9c56" aria-selected="true" id="tab-dom-e96fc0d1-0c6d-4983-a0f7-e845150e9c56">Preview</button>
+            <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-04705c2c-7f31-4562-b0db-d4ee030c1f6f" type="button" role="tab" aria-controls="dom-04705c2c-7f31-4562-b0db-d4ee030c1f6f" aria-selected="false" id="tab-dom-04705c2c-7f31-4562-b0db-d4ee030c1f6f">Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-light">
+      <div class="tab-content">
+        <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-e96fc0d1-0c6d-4983-a0f7-e845150e9c56" id="dom-e96fc0d1-0c6d-4983-a0f7-e845150e9c56">
+          <label for="organizerMultiple">Multiple</label>
+          <select class="form-select js-choice" id="organizerMultiple" multiple="multiple" size="1" name="organizerMultiple" data-options='{"removeItemButton":true,"placeholder":true}'>
+            <option value="">Select organizer...</option>
+            <option>Massachusetts Institute of Technology</option>
+            <option>University of Chicago</option>
+            <option>GSAS Open Labs At Harvard</option>
+            <option>California Institute of Technology</option>
+          </select>
+        </div>
+        <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-04705c2c-7f31-4562-b0db-d4ee030c1f6f" id="dom-04705c2c-7f31-4562-b0db-d4ee030c1f6f">
+          <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;label for=&quot;organizerMultiple&quot;&gt;Multiple&lt;/label&gt;
+&lt;select class=&quot;form-select js-choice&quot; id=&quot;organizerMultiple&quot; multiple=&quot;multiple&quot; size=&quot;1&quot; name=&quot;organizerMultiple&quot; data-options='{&quot;removeItemButton&quot;:true,&quot;placeholder&quot;:true}'&gt;
+&lt;option value=&quot;&quot;&gt;Select organizer...&lt;/option&gt;
+&lt;option&gt;Massachusetts Institute of Technology&lt;/option&gt;
+&lt;option&gt;University of Chicago&lt;/option&gt;
+&lt;option&gt;GSAS Open Labs At Harvard&lt;/option&gt;
+&lt;option&gt;California Institute of Technology&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="card-header">
+      <div class="row flex-between-end">
+        <div class="col-auto align-self-center">
+          <h5 class="mb-0" data-anchor="data-anchor">Single Select Example</h5>
+        </div>
+        <div class="col-auto ms-auto">
+          <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+            <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-69509e48-2655-43d3-8909-52d133e261bb" type="button" role="tab" aria-controls="dom-69509e48-2655-43d3-8909-52d133e261bb" aria-selected="true" id="tab-dom-69509e48-2655-43d3-8909-52d133e261bb">Preview</button>
+            <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-bd5d597c-8c6a-430e-a8aa-bd84049c1d12" type="button" role="tab" aria-controls="dom-bd5d597c-8c6a-430e-a8aa-bd84049c1d12" aria-selected="false" id="tab-dom-bd5d597c-8c6a-430e-a8aa-bd84049c1d12">Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body bg-light">
+      <div class="tab-content">
+        <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-69509e48-2655-43d3-8909-52d133e261bb" id="dom-69509e48-2655-43d3-8909-52d133e261bb">
+          <label for="organizerSingle">Single</label>
+          <select class="form-select js-choice" id="organizerSingle" size="1" name="organizerSingle" data-options='{"removeItemButton":true,"placeholder":true}'>
+            <option value="">Select organizer...</option>
+            <option>Massachusetts Institute of Technology</option>
+            <option>University of Chicago</option>
+            <option>GSAS Open Labs At Harvard</option>
+            <option>California Institute of Technology </option>
+          </select>
+        </div>
+        <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-bd5d597c-8c6a-430e-a8aa-bd84049c1d12" id="dom-bd5d597c-8c6a-430e-a8aa-bd84049c1d12">
+          <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;label for=&quot;organizerSingle&quot;&gt;Single&lt;/label&gt;
+&lt;select class=&quot;form-select js-choice&quot; id=&quot;organizerSingle&quot; size=&quot;1&quot; name=&quot;organizerSingle&quot; data-options='{&quot;removeItemButton&quot;:true,&quot;placeholder&quot;:true}'&gt;
+&lt;option value=&quot;&quot;&gt;Select organizer...&lt;/option&gt;
+&lt;option&gt;Massachusetts Institute of Technology&lt;/option&gt;
+&lt;option&gt;University of Chicago&lt;/option&gt;
+&lt;option&gt;GSAS Open Labs At Harvard&lt;/option&gt;
+&lt;option&gt;California Institute of Technology &lt;/option&gt;
+&lt;/select&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="card-header">
+      <h5 class="mb-0">Javascript</h5>
+    </div>
+    <div class="card-body bg-light">
+      <pre class="scrollbar mt-2"><code class="language-html">&lt;script src=&quot;vendors/choices/choices.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+    </div>
+    <div class="card-header">
+      <h5 class="mb-0">Style</h5>
+    </div>
+    <div class="card-body bg-light">
+      <pre class="scrollbar mt-2"><code class="language-html">&lt;link href=&quot;vendors/choices/choices.min.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
+    </div>
+    <footer class="footer">
+    <div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
+      <div class="col-12 col-sm-auto text-center">
+        <p class="mb-0 text-600">Thank you for creating with Falcon <span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2021 &copy; <a href="https://themewagon.com">Themewagon</a></p>
+      </div>
+      <div class="col-12 col-sm-auto text-center">
+        <p class="mb-0 text-600">v3.4.0</p>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

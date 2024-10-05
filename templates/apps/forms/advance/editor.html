@@ -1,0 +1,56 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+  <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Editor</h3>
+                  <p class="mt-2">Falcon uses Tinymce, the world's most popular JavaScript library for rich text editing.</p><a class="btn btn-link ps-0 btn-sm" href="https://www.tiny.cloud/docs/quick-start/" target="_blank"> Tinymce documentations<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Example</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-3c4ce358-864b-46cb-b317-09ba4ee38974" type="button" role="tab" aria-controls="dom-3c4ce358-864b-46cb-b317-09ba4ee38974" aria-selected="true" id="tab-dom-3c4ce358-864b-46cb-b317-09ba4ee38974">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-66a742f1-e80c-47dc-94d8-e73f9638a709" type="button" role="tab" aria-controls="dom-66a742f1-e80c-47dc-94d8-e73f9638a709" aria-selected="false" id="tab-dom-66a742f1-e80c-47dc-94d8-e73f9638a709">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-3c4ce358-864b-46cb-b317-09ba4ee38974" id="dom-3c4ce358-864b-46cb-b317-09ba4ee38974">
+                  <div class="min-vh-50">
+
+                    <textarea class="tinymce d-none" name="content"></textarea>
+
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-66a742f1-e80c-47dc-94d8-e73f9638a709" id="dom-66a742f1-e80c-47dc-94d8-e73f9638a709">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;min-vh-50&quot;&gt;
+  &lt;textarea class=&quot;tinymce d-none&quot; name=&quot;content&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="card-header">
+              <h5 class="mb-0">Javascript</h5>
+            </div>
+            <div class="card-body bg-light">
+              <pre class="scrollbar mt-2"><code class="language-html">&lt;script src=&quot;vendors/tinymce/tinymce.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          <footer class="footer">
+            <div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">Thank you for creating with Falcon <span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2021 &copy; <a href="https://themewagon.com">Themewagon</a></p>
+              </div>
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">v3.4.0</p>
+              </div>
+            </div>
+          </footer>
+{% endblock %}

@@ -1,0 +1,134 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+          <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Google Map</h3>
+                  <p class="mb-0">Falcon uses Google map with Snazzy Maps, with different color schemes aimed towards web designers and developers.</p>
+                </div>
+              </div>
+            </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Example</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-2a369c04-ed9c-4afb-b71e-4a418321aa56" type="button" role="tab" aria-controls="dom-2a369c04-ed9c-4afb-b71e-4a418321aa56" aria-selected="true" id="tab-dom-2a369c04-ed9c-4afb-b71e-4a418321aa56">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-68d90e55-f1bd-42d4-94eb-fc61fe7aeb13" type="button" role="tab" aria-controls="dom-68d90e55-f1bd-42d4-94eb-fc61fe7aeb13" aria-selected="false" id="tab-dom-68d90e55-f1bd-42d4-94eb-fc61fe7aeb13">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-2a369c04-ed9c-4afb-b71e-4a418321aa56" id="dom-2a369c04-ed9c-4afb-b71e-4a418321aa56">
+                  <div class="googlemap min-vh-50" data-latlng="48.8583701,2.2922873,17" data-scrollwheel="false" data-icon="../../assets/img/icons/map-marker.png" data-zoom="17" data-theme="Default">
+                    <div class="marker-content">
+                      <h5>Eiffel Tower</h5>
+                      <p class="mb-0">Gustave Eiffel's iconic, wrought-iron 1889 tower,<br /> with steps and elevators to observation decks.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-68d90e55-f1bd-42d4-94eb-fc61fe7aeb13" id="dom-68d90e55-f1bd-42d4-94eb-fc61fe7aeb13">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;googlemap min-vh-50&quot; data-latlng=&quot;48.8583701,2.2922873,17&quot; data-scrollwheel=&quot;false&quot; data-icon=&quot;../../assets/img/icons/map-marker.png&quot; data-zoom=&quot;17&quot; data-theme=&quot;Default&quot;&gt;
+  &lt;div class=&quot;marker-content&quot;&gt;
+    &lt;h5&gt;Eiffel Tower&lt;/h5&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;Gustave Eiffel's iconic, wrought-iron 1889 tower,&lt;br /&gt; with steps and elevators to observation decks.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-1">Javascript</h5>
+              <p class="mb-0"> <a class="font-sans-serif" href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">Get your API key</a><span class="d-inline-block ms-1">&xrarr;</span></p>
+            </div>
+            <div class="card-body bg-light">
+              <pre class="scrollbar mt-2"><code class="language-html">&lt;script src=&quot;https:maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&quot; async=&quot;async&quot;&gt;&lt;/script&gt;</code></pre>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0">Map color schemes</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p>Change the value of <code>data-theme=''</code> to any of the followings</p>
+              <ul>
+                <li><code>Default</code></li>
+                <li><code>Gray</code></li>
+                <li><code>Midnight</code></li>
+                <li><code>Hopper</code></li>
+                <li><code>Beard</code></li>
+                <li><code>AssassianCreed</code></li>
+                <li><code>SubtleGray</code></li>
+                <li><code>Tripitty</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Example</h5>
+                  <p class="mb-0 mt-2 mb-0">With <code> AssassianCreed </code> scheme</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-722b8365-8259-47fd-b09d-562a8a1ca434" type="button" role="tab" aria-controls="dom-722b8365-8259-47fd-b09d-562a8a1ca434" aria-selected="true" id="tab-dom-722b8365-8259-47fd-b09d-562a8a1ca434">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-d4e33601-ab2f-4d90-9a31-3b26453e3683" type="button" role="tab" aria-controls="dom-d4e33601-ab2f-4d90-9a31-3b26453e3683" aria-selected="false" id="tab-dom-d4e33601-ab2f-4d90-9a31-3b26453e3683">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-722b8365-8259-47fd-b09d-562a8a1ca434" id="dom-722b8365-8259-47fd-b09d-562a8a1ca434">
+                  <div class="googlemap min-vh-50" data-latlng="48.8583701,2.2922873,17" data-scrollwheel="false" data-icon="../../assets/img/icons/map-marker.png" data-zoom="17" data-theme="AssassianCreed">
+                    <div class="marker-content">
+                      <h5>Eiffel Tower</h5>
+                      <p class="mb-0">Gustave Eiffel's iconic, wrought-iron 1889 tower,<br /> with steps and elevators to observation decks.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-d4e33601-ab2f-4d90-9a31-3b26453e3683" id="dom-d4e33601-ab2f-4d90-9a31-3b26453e3683">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;googlemap min-vh-50&quot; data-latlng=&quot;48.8583701,2.2922873,17&quot; data-scrollwheel=&quot;false&quot; data-icon=&quot;../../assets/img/icons/map-marker.png&quot; data-zoom=&quot;17&quot; data-theme=&quot;AssassianCreed&quot;&gt;
+  &lt;div class=&quot;marker-content&quot;&gt;
+    &lt;h5&gt;Eiffel Tower&lt;/h5&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;Gustave Eiffel's iconic, wrought-iron 1889 tower,&lt;br /&gt; with steps and elevators to observation decks.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Example of street view</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-7ad9c2fc-c7ff-4048-b4da-ba2c826d3198" type="button" role="tab" aria-controls="dom-7ad9c2fc-c7ff-4048-b4da-ba2c826d3198" aria-selected="true" id="tab-dom-7ad9c2fc-c7ff-4048-b4da-ba2c826d3198">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-f2fa55df-8490-4fe0-97f2-f17dc17d42bd" type="button" role="tab" aria-controls="dom-f2fa55df-8490-4fe0-97f2-f17dc17d42bd" aria-selected="false" id="tab-dom-f2fa55df-8490-4fe0-97f2-f17dc17d42bd">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-7ad9c2fc-c7ff-4048-b4da-ba2c826d3198" id="dom-7ad9c2fc-c7ff-4048-b4da-ba2c826d3198">
+                  <div class="googlemap min-vh-50" data-latlng="43.0795932,-79.0776385" data-pov='{"heading":180,"pitch":-30}' data-scrollwheel="false" data-icon="../../assets/img/icons/map-marker.png" data-zoom="1" data-theme="streetview"></div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-f2fa55df-8490-4fe0-97f2-f17dc17d42bd" id="dom-f2fa55df-8490-4fe0-97f2-f17dc17d42bd">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;googlemap min-vh-50&quot; data-latlng=&quot;43.0795932,-79.0776385&quot; data-pov='{&quot;heading&quot;:180,&quot;pitch&quot;:-30}' data-scrollwheel=&quot;false&quot; data-icon=&quot;../../assets/img/icons/map-marker.png&quot; data-zoom=&quot;1&quot; data-theme=&quot;streetview&quot;&gt;&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+{% endblock %}

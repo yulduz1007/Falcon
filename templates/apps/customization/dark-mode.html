@@ -1,0 +1,279 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+          <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Dark Mode</h3>
+                  <p class="mb-0">It’s effortless to switch Dark Mode in Falcon. You can enable Dark Mode by default or create a Dark/Light switch if you want. To set the default mode "Dark", please see the <a href='../../documentation/customization/configuration.html'>configuration page</a>.</p>
+                </div>
+              </div>
+            </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Toggle Dark Mode</h5>
+                  <p class="mb-0 mt-2 mb-0">Toggling dark mode is very easy in Falcon. You can toggle dark or light mode by using checkbox, radio input, switch input and custom icon component.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-a9f10c53-93cd-4886-a346-9e3e3a34b49d" type="button" role="tab" aria-controls="dom-a9f10c53-93cd-4886-a346-9e3e3a34b49d" aria-selected="true" id="tab-dom-a9f10c53-93cd-4886-a346-9e3e3a34b49d">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-553dd2b4-80c0-4cfe-8474-340a1dbab9bb" type="button" role="tab" aria-controls="dom-553dd2b4-80c0-4cfe-8474-340a1dbab9bb" aria-selected="false" id="tab-dom-553dd2b4-80c0-4cfe-8474-340a1dbab9bb">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-a9f10c53-93cd-4886-a346-9e3e3a34b49d" id="dom-a9f10c53-93cd-4886-a346-9e3e3a34b49d">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="fs-0 mb-2">Checkbox </h5>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexCheckDefault" type="checkbox" data-theme-control="theme" />
+                        <label class="form-check-label" for="flexCheckDefault">Dark mode</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h5 class="fs-0 mb-2">Switch Input</h5>
+                      <div class="form-check form-switch ps-0">
+                        <input class="form-check-input ms-0 me-2" id="switchDarkModeExample" type="checkbox" data-theme-control="theme" />
+                        <label for="switchDarkModeExample">Dark Mode</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h5 class="fs-0 mb-2">Radio button</h5>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" value="light" data-theme-control="theme" />
+                        <label class="form-check-label" for="flexRadioDefault1">Light</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" id="flexRadioDefault2" type="radio" value="dark" data-theme-control="theme" />
+                        <label class="form-check-label" for="flexRadioDefault2">Dark</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h5 class="fs-0 mb-2">Custom icon</h5>
+                      <div class="theme-control-toggle">
+                        <input class="form-check-input ms-0 theme-control-toggle-input" id="themeControlToggleExample" type="checkbox" data-theme-control="theme" value="dark" />
+                        <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggleExample"><span class="fas fa-sun fs-0"></span></label>
+                        <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggleExample"><span class="fas fa-moon fs-0"></span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-553dd2b4-80c0-4cfe-8474-340a1dbab9bb" id="dom-553dd2b4-80c0-4cfe-8474-340a1dbab9bb">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;h5 class=&quot;fs-0 mb-2&quot;&gt;Checkbox &lt;/h5&gt;
+    &lt;div class=&quot;form-check&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; id=&quot;flexCheckDefault&quot; type=&quot;checkbox&quot; data-theme-control=&quot;theme&quot; /&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;flexCheckDefault&quot;&gt;Dark mode&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;h5 class=&quot;fs-0 mb-2&quot;&gt;Switch Input&lt;/h5&gt;
+    &lt;div class=&quot;form-check form-switch ps-0&quot;&gt;
+      &lt;input class=&quot;form-check-input ms-0 me-2&quot; id=&quot;switchDarkModeExample&quot; type=&quot;checkbox&quot; data-theme-control=&quot;theme&quot; /&gt;
+      &lt;label for=&quot;switchDarkModeExample&quot;&gt;Dark Mode&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;h5 class=&quot;fs-0 mb-2&quot;&gt;Radio button&lt;/h5&gt;
+    &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; id=&quot;flexRadioDefault1&quot; type=&quot;radio&quot; value=&quot;light&quot; data-theme-control=&quot;theme&quot; /&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;flexRadioDefault1&quot;&gt;Light&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-check form-check-inline&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; id=&quot;flexRadioDefault2&quot; type=&quot;radio&quot; value=&quot;dark&quot; data-theme-control=&quot;theme&quot; /&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;flexRadioDefault2&quot;&gt;Dark&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;h5 class=&quot;fs-0 mb-2&quot;&gt;Custom icon&lt;/h5&gt;
+    &lt;div class=&quot;theme-control-toggle&quot;&gt;
+      &lt;input class=&quot;form-check-input ms-0 theme-control-toggle-input&quot; id=&quot;themeControlToggleExample&quot; type=&quot;checkbox&quot; data-theme-control=&quot;theme&quot; value=&quot;dark&quot; /&gt;
+      &lt;label class=&quot;mb-0 theme-control-toggle-label theme-control-toggle-light&quot; for=&quot;themeControlToggleExample&quot;&gt;&lt;span class=&quot;fas fa-sun fs-0&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+      &lt;label class=&quot;mb-0 theme-control-toggle-label theme-control-toggle-dark&quot; for=&quot;themeControlToggleExample&quot;&gt;&lt;span class=&quot;fas fa-moon fs-0&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0">If you are using gulp based workflow</h5>
+            </div>
+            <div class="card-body bg-light">
+              <h6 class="fs-0">Modify Dark colors using SCSS</h6>
+              <p>You can find all the variables used to create the dark mode in <code>/src/scss/theme/root/_dark.scss</code> file. If you want to override a variable, copy that variable to your <code>/src/scss/theme/user.scss</code> file and update it as you see fit. When you change the variable with scss, make sure that the gulp is running.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0">If you are not using gulp based workflow</h5>
+            </div>
+            <div class="card-body bg-light">
+              <h6 class="fs-0">Modify Dark colors using CSS</h6>
+              <p>You can find all the CSS variables used to create the dark mode in <code>/public/assets/css/theme.css</code> file. Look for the class <code>:root.dark</code> and you will see all the available variables. If you want to override a variable, copy that variable to your <code>/public/assets/css/user.css</code> file and update it as you see fit.</p>
+              <pre><code class="lang-css">/*-----------------------------------------------
+|   Theme Styles
+-----------------------------------------------*/
+:root, :root.light, :root .light {
+  --falcon-100: #f9fafd;
+  --falcon-200: #edf2f9;
+  --falcon-300: #d8e2ef;
+}
+
+.dark {
+  --falcon-100: #0b1727;
+  --falcon-200: #232e3c;
+  --falcon-300: #344050;
+}</code></pre>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0">Using the Dark CSS classes in HTML</h5>
+            </div>
+            <div class="card-body bg-light">
+              <h6 class="fs-0">You can keep a style constant regardless of current (light or dark) mode</h6>
+              <p>If you want a component to retain it’s color (light or dark) as it is regardless of the current mode, you can use the following classes -</p>
+              <p> <code>.light</code> - It will keep the color light even if the current mode is dark</p>
+              <p> <code>.dark</code> - It will keep the color dark even if the current mode is light</p>
+              <p>The following two examples illustrate the color persistency -</p>
+              <div class="row gx-3">
+                <div class="col-lg-6">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row flex-between-end">
+                        <div class="col-auto align-self-center">
+                        </div>
+                        <div class="col-auto ms-auto">
+                          <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                            <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-78b2acb1-bcb4-407a-b855-8e9deaa6f283" type="button" role="tab" aria-controls="dom-78b2acb1-bcb4-407a-b855-8e9deaa6f283" aria-selected="true" id="tab-dom-78b2acb1-bcb4-407a-b855-8e9deaa6f283">Preview</button>
+                            <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-e6f405cf-d78c-45fb-9f71-aa2b9e845b7c" type="button" role="tab" aria-controls="dom-e6f405cf-d78c-45fb-9f71-aa2b9e845b7c" aria-selected="false" id="tab-dom-e6f405cf-d78c-45fb-9f71-aa2b9e845b7c">Code</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body bg-light">
+                      <div class="tab-content">
+                        <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-78b2acb1-bcb4-407a-b855-8e9deaa6f283" id="dom-78b2acb1-bcb4-407a-b855-8e9deaa6f283">
+                          <div class="card bg-100 light">
+                            <div class="card-body">
+                              <p class="mb-0 text-700"><b>This element will retain it's color if you switch between light and dark mode.</b></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-e6f405cf-d78c-45fb-9f71-aa2b9e845b7c" id="dom-e6f405cf-d78c-45fb-9f71-aa2b9e845b7c">
+                          <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;card bg-100 light&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;p class=&quot;mb-0 text-700&quot;&gt;&lt;b&gt;This element will retain it's color if you switch between light and dark mode.&lt;/b&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mt-3 mt-lg-0">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row flex-between-end">
+                        <div class="col-auto align-self-center">
+                        </div>
+                        <div class="col-auto ms-auto">
+                          <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                            <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-b3321dc5-1b66-48d1-8c89-214a3d7c5c22" type="button" role="tab" aria-controls="dom-b3321dc5-1b66-48d1-8c89-214a3d7c5c22" aria-selected="true" id="tab-dom-b3321dc5-1b66-48d1-8c89-214a3d7c5c22">Preview</button>
+                            <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-997e94f2-3722-448e-a93d-adbcebe21556" type="button" role="tab" aria-controls="dom-997e94f2-3722-448e-a93d-adbcebe21556" aria-selected="false" id="tab-dom-997e94f2-3722-448e-a93d-adbcebe21556">Code</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body bg-light">
+                      <div class="tab-content">
+                        <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-b3321dc5-1b66-48d1-8c89-214a3d7c5c22" id="dom-b3321dc5-1b66-48d1-8c89-214a3d7c5c22">
+                          <div class="card bg-100 dark">
+                            <div class="card-body">
+                              <p class="mb-0 text-700"><b>This element will retain it's color if you switch between light and dark mode.</b></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-997e94f2-3722-448e-a93d-adbcebe21556" id="dom-997e94f2-3722-448e-a93d-adbcebe21556">
+                          <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;card bg-100 dark&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;p class=&quot;mb-0 text-700&quot;&gt;&lt;b&gt;This element will retain it's color if you switch between light and dark mode.&lt;/b&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="fs-0 mt-4">Override Background and Text color only for dark mode</h6>
+              <p>If you want to use a different text color or background color rather than the default dark theme color for any element, you can use the special "dark" classes: </p>
+              <ul>
+                <li> <code>dark__bg-* </code></li>
+                <li><code>dark__text-* </code></li>
+              </ul>
+              <p>The following element illustrates the example:</p>
+              <div class="card">
+                <div class="card-header">
+                  <div class="row flex-between-end">
+                    <div class="col-auto align-self-center">
+                    </div>
+                    <div class="col-auto ms-auto">
+                      <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                        <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-f3bc16e7-1f2f-40ee-976d-b6edec69e33d" type="button" role="tab" aria-controls="dom-f3bc16e7-1f2f-40ee-976d-b6edec69e33d" aria-selected="true" id="tab-dom-f3bc16e7-1f2f-40ee-976d-b6edec69e33d">Preview</button>
+                        <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-5807ed2c-5aa9-40dd-b1c9-a35e4cda59b4" type="button" role="tab" aria-controls="dom-5807ed2c-5aa9-40dd-b1c9-a35e4cda59b4" aria-selected="false" id="tab-dom-5807ed2c-5aa9-40dd-b1c9-a35e4cda59b4">Code</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body bg-light">
+                  <div class="tab-content">
+                    <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-f3bc16e7-1f2f-40ee-976d-b6edec69e33d" id="dom-f3bc16e7-1f2f-40ee-976d-b6edec69e33d">
+                      <div class="card bg-light dark__bg-primary">
+                        <div class="card-body">
+                          <p class="mb-0"><span class="fw-bold">This element will retain it's color if you switch between light and dark mode.</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-5807ed2c-5aa9-40dd-b1c9-a35e4cda59b4" id="dom-5807ed2c-5aa9-40dd-b1c9-a35e4cda59b4">
+                      <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;card bg-light dark__bg-primary&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;&lt;span class=&quot;fw-bold&quot;&gt;This element will retain it's color if you switch between light and dark mode.&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0">Emit JavaScript event on color scheme change</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p>When you switch between the dark and light mode, or change any settings from the global theme config at runtime, we emit an event <code>clickControl </code><br />We used this event to update colors using JavaScript. For example, the charts change their colors using this event. You can catch and use this event with the following code snippet:</p>
+              <pre><code class="lang-js">const themeController = document.body;
+
+themeController.addEventListener(
+  "clickControl",
+  ({ detail: { control, value } }) => {
+
+    if (control === "theme") {
+      console.log(value) // value will be localStorage theme value (dark/light)
+      // your code here
+
+    }
+  }
+);</code></pre>
+            </div>
+          </div>
+{% endblock %}

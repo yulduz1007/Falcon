@@ -1,0 +1,35 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+          <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Styling</h3>
+                  <p class="mb-1 mt-2">We recommend you customize your theme styles using the user style files. You can customize the theme’s styles with the following approaches:</p>
+                </div>
+              </div>
+            </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Gulp based workflow</h5>
+            </div>
+            <div class="card-body bg-light">
+              <div class="border rounded-1 bg-white px-3 py-2 mb-3"><code>user.scss</code></div>
+              <p class="mb-0">You can add your own SCSS and override the theme style in the <code>src/scss/user.scss</code> file.</p>
+              <div class="border-dashed-bottom my-3"></div>
+              <div class="border rounded-1 bg-white px-3 py-2 mt-4 mb-3"><code>_user-variables.scss</code></div>
+              <p class="mb-0">To make broader changes to the design of the theme, such as changing the color scheme or font sizes, use <code>src/scss/_user-variables.scss</code>. Any variable from <code>node_modules/bootstrap/scss/variables</code> or <code>src/scss/theme/_variables.scss</code> can be overridden with your own value.</p>
+              <div class="border-dashed-bottom my-3"></div>
+              <div class="border rounded-1 bg-white px-3 py-2 mt-4 mb-3"><code>_bootstrap.scss</code></div>
+              <p class="mb-0">To remove bootstrap components, update <code>src/scss/_bootstrap.scss</code> file.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">If you are not using Gulp based workflow</h5>
+            </div>
+            <div class="card-body bg-light">
+              <div class="border rounded-1 bg-white px-3 py-2 mb-3"><code>user.css</code></div>
+              <p class="mb-0">You can add your own CSS and override the theme style in the <code>public/assets/css/user.css</code> file.</p>
+            </div>
+          </div>
+{% endblock %}

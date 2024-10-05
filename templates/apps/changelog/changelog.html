@@ -1,0 +1,938 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="alert alert-warning p-4 mb-0" role="alert">
+                <div class="d-flex"><span class="fab fa-intentionally-kept fs-3"></span>
+                  <div class="flex-1 ms-3">
+                    <h4 class="alert-heading">Before you update!</h4>
+                    <p class="mb-0">Backup your files and read the changelog before updating Falcon on your project. If you come across with any problems with Falcon template during the update, feel free to contact us at <a href="mailto:support@themewagon.com">support@themewagon.com</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.4.0</code> - Laggar falcon</h5>
+              <p class="mb-0">19 September, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>PAGE: <code>public/modules/components/treeview.html</code></li>
+                <li>SCSS: <code>src/scss/theme/_treeview.scss</code></li>
+                <li>JS: <code>src/js/treeview.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>JS: <code>src/js/theme.js</code></li>
+                <li>JS: <code>src/js/dropzone.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/returning-customer-rate.js</code></li>
+                <li>SCSS: <code>src/scss/theme/_theme.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_dropzone.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_full-calendar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_dark.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_light.scss</code></li>
+              </ul>
+              <h6>Fix </h6>
+              <ul class="bullet-inside ps-0">
+                <li>Returning Customer Rate chart legend issue</li>
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------------->
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.3.0</code> - Lanner falcon</h5>
+              <p class="mb-0">23 August, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>PAGE: <code>public/modules/components/placeholder.html</code></li>
+                <li>PAGE: <code>public/modules/components/offcanvas.html  </code></li>
+                <li>JS: <code>src/js/charts/echarts/bandwidth-saved.js  </code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Bootstrap to <code>v5.1.0  </code></li>
+                <li>Plugin: Removed <code>progressbar.js</code></li>
+                <li>Bandwidth Saved progressbar is converted to <code>echarts </code>from <code>progressbar.js </code></li>
+                <li>Settings Panel is converted to <code>offcanvas </code>from <code>modal</code></li>
+                <li>Removed <code>Side Panel </code>component</li>
+                <li>Removed <code>Advance Progessbar </code>component</li>
+                <li>JS: Removed <code>src/js/settings-panel.js</code></li>
+                <li>JS: Removed <code>src/js/progressbar.js</code></li>
+                <li>JS: <code>src/js/config.js</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+                <li>JS: <code>src/js/utils.js</code></li>
+                <li>SCSS: Removed <code>src/scss/theme/_modal.scss</code></li>
+                <li>SCSS: Removed <code>src/scss/theme/plugins/_progressbar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_light.scss</code></li>
+                <li>SCSS: <code>src/scss/_bootstrap.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_echarts.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_chat.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_choices.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_avatar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_functions.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_popover.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_plugins.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_settings-panel.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_theme.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/mixins/_utilities.scss</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Search box dropdown menu hr color in dark mode.</li>
+                <li>Search box close button color in dark mode.</li>
+                <li>SCSS compiling deprecated warning.</li>
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------------->
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.2.0</code> - Aplomado falcon</h5>
+              <p class="mb-0">23 June, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Added multiple echarts example</li>
+                <li>PAGE: <code>public/dashboard/crm.html</code></li>
+                <li>JS: <code>public/assets/data/world.js</code></li>
+                <li>JS: <code>public/assets/data/usa.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/closed-vs-goal.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/line-payment.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/real-time-users.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/lead-conversion.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/crm-revenue.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/deal-storage-funnel.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/location-by-session-crm.js      </code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Bootstrap to <code>v5.0.2</code></li>
+                <li>Plugin: <code>echarts </code></li>
+                <li>Plugin: <code>chart.js</code></li>
+                <li>Line payment chart is converted from <code>chart.js </code>to <code>echarts</code></li>
+                <li>Real time user chart is converted from <code>chart.js </code>to <code>echarts</code></li>
+                <li>JS: <code>src/js/popover.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/traffic-channels.js</code></li>
+                <li>JS: <code>src/js/tinymce.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/echarts-utils.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/session-by-country-map.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/total-order.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/weekly-sales.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/returning-customer-rate.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/gross-revenue.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/traffic-channels.js</code></li>
+                <li>JS: <code>src/js/theme-control.js</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+                <li>JS: <code>gulp/watch.gulp.js</code></li>
+                <li>JS: <code>gulp/script.gulp.js</code></li>
+                <li>SCSS: <code>src/scss/theme/mixins/_button.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_buttons.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_dropdown.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_echarts.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_list.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_dark.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_light.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_flatpickr.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_dashboard.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_forms.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-top.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_notification.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_hover.scss</code></li>
+                <li>SUSS: <code>src/scss/theme/plugins/_tinymce.scss</code></li>
+                <li>JSON: <code>package.json</code></li>
+                <li>JSON: <code>vendors.json</code></li>
+                <li>JSON: <code>gulp/gulp.json</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Tinymce dark mode issue</li>
+                <li>Table dropdown issue in ipad</li>
+                <li>Disabled button color issue</li>
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.1.0</code> - Saker falcon</h5>
+              <p class="mb-0">2 June, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>HTML: <code>public/modules/forms/floating-labels.html</code></li>
+                <li>Added support for Apple M1 chip</li>
+                <li>Add <code>@mr-hope/gulp-sass </code>package for compiling SCSS</li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Plugin: <code>@fortawesome/fontawesome-free</code></li>
+                <li>Plugin: <code>@joeattardi/emoji-button</code></li>
+                <li>Plugin: <code>@popperjs/core</code></li>
+                <li>Plugin: <code>anchor-js</code></li>
+                <li>Plugin: <code>dropzone</code></li>
+                <li>Plugin: <code>fullcalendar</code></li>
+                <li>Plugin: <code>glightbox</code></li>
+                <li>Plugin: <code>leaflet.markercluster</code></li>
+                <li>Plugin: <code>list.js</code></li>
+                <li>Plugin: <code>lottie-web</code></li>
+                <li>Plugin: <code>plyr</code></li>
+                <li>Plugin: <code>swiper</code></li>
+                <li>Plugin: <code>tinymce</code></li>
+                <li>Plugin: <code>typed.js</code></li>
+                <li>Remove <code>gulp-sass </code>package</li>
+                <li>JS: <code>gulp/style.gulp.js</code></li>
+                <li>JS: <code>src/js/calendar/template.js</code></li>
+                <li>JS: <code>src/js/chat.js</code></li>
+                <li>JS: <code>src/js/search.js</code></li>
+                <li>JS: <code>src/js/list.js</code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-top.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_calendar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_chat.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_notification.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_full-calendar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_icon.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_dark.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_light.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_forms.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_reboot.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_dashboard.scss</code></li>
+                <li>JSON: <code>vendors.json</code></li>
+                <li>JSON: <code>package.json</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Search suggestion toggle issue in top navbar</li>
+                <li>Notification dropdown height in Firefox</li>
+                <li>Other minor bugs.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0</code> - Prairie falcon</h5>
+              <p class="mb-0">23 May, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>HTML: <code>public/dashboard/analytics.html</code></li>
+                <li>HTML: <code>public/dashboard/e-commerce.html</code></li>
+                <li>HTML: <code>public/dashboard/project-management.html</code></li>
+                <li>HTML: <code>public/dashboard/saas.html</code></li>
+                <li>JS: <code>src/js/charts/echarts/audience.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/active-users-report.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/basic-echarts.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/bounce-rate.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/candle-chart.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/gross-revenue.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/market-share-ecommerce.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/report-for-this-week.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/returning-customer-rate.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/sales-by-pos-location.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/session-by-country-map.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/session-by-country.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/session-by-browser.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/total-sales-ecommerce.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/traffic-channels.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/users-by-time.js</code></li>
+                <li>JS: <code>src/js/calendar/management-calendar.js</code></li>
+                <li>JS: <code>src/js/calendar/management-events.js</code></li>
+                <li>JS: <code>gulp/link.gulp.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/product-share-doughnut.js</code></li>
+                <li>SCSS: <code>src/scss/theme/_audience-tab.scss</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>
+                  Bootstrap to <code>v5.0.1</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+                <li>JS: <code>src/js/utils.js</code></li>
+                <li>JS: <code>src/js/navbar-darken-on-scroll.js</code></li>
+                <li>JS: <code>src/js/fullcalendar.js</code></li>
+                <li>JS: <code>src/js/navbar-top.js</code></li>
+                <li>JS: <code>src/js/calendar/index.js</code></li>
+                <li>JS: <code>src/js/calendar/template.js</code></li>
+                <li>JS: <code>src/js/calendar/events.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/echarts.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-line-payment.js</code></li>
+                <li>JS: <code>src/js/list.js</code></li>
+                <li>JS: <code>src/js/search.js</code></li>
+                <li>JS: <code>src/js/charts/echarts/total-sales.js</code></li>
+                <li>JS: <code>gulp/product.gulp.js</code></li>
+                <li>JS: <code>gulp/pug.gulp.js</code></li>
+                <li>SCSS: <code>src/scss/theme/_theme.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_full-calendar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_echarts.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_mixed.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/helpers/_background.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_dark.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_light.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_avatar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_calendar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_forms.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_dashboard.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_card.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_timeline.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_utilities.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_calendar.scss</code></li>
+                <li>JSON: <code>vendors.json</code></li>
+                <li>JSON: <code>gulp/gulp.json</code></li>
+                <li>JSON: <code>package.json</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta7</code> - Taita falcon</h5>
+              <p class="mb-0">24 April, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>JS: <code>gulp/product.gulp.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>JS: <code>src/js/list.js</code></li>
+                <li>JS: <code>src/js/rater.js</code></li>
+                <li>JS: <code>src/js/tinymce.js</code></li>
+                <li>JS: <code>src/js/googleMap.js</code></li>
+                <li>JS: <code>src/js/navbar-darken-on-scroll.js</code></li>
+                <li>JS: <code>src/js/wizard.js</code></li>
+                <li>JS: <code>gulp/pug.gulp.js</code></li>
+                <li>JS: <code>gulpfile.js</code></li>
+                <li>JSON: <code>gulp/gulp.json</code></li>
+                <li>JSON: <code>package.json</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_tinymce.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_landing.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-vertical.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_search-box.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_buttons.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/helpers/_background.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_flatpickr.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_full-calendar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_browser-support.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_kanban.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_notification.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_choices.scss</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta6</code> - Merlin falcon</h5>
+              <p class="mb-0">8 April, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>JS: <code>src/js/charts/chartjs/chart-bar.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-combo.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-doughnut.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-line-payment.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-pie.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-polar.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-radar.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-real-time-user.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chart-scatter.js</code></li>
+                <li>JS: <code>src/js/charts/chartjs/chartjs-utils.js</code></li>
+                <li>JS: <code>src/js/dropdown-menu.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>HTML: <code>public/modules/charts/chartjs.html</code></li>
+                <li>HTML: <code>public/modules/tables/basic-tables.html</code></li>
+                <li>HTML: <code>public/modules/forms/basic/layout.html</code></li>
+                <li>HTML: <code>public/modules/forms/basic/form-control.html</code></li>
+                <li>JS: <code>src/js/utils.js</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+                <li>JS: <code>src/js/flatpickr.js</code></li>
+                <li>JS: <code>gulp/pug.gulp.js</code></li>
+                <li>SCSS: <code>src/scss/theme/_nav-tab.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_dark.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/root/_light.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_card.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/helpers/_flex.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-top.scss</code></li>
+                <li>JSON: <code>package.json</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Dropdown clipping on table</li>
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta5</code> - Sooty falcon</h5>
+              <p class="mb-0">25 March, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Multiple icons set added with example</li>
+                <li>Page: <code>public/plugins/Overlayscrollbars.html</code></li>
+                <li>JS: <code>src/js/icons.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li> <strong>Bootsrap</strong> version updated from <code>v5.0.0-beta2</code> to <code>v5.0.0-beta3</code></li>
+                <li>File structure updated</li>
+                <li>JS: <code>src/js/navbar-vertical.js</code></li>
+                <li>JS: <code>src/js/toast.js</code></li>
+                <li>JS: <code>src/js/list.js</code></li>
+                <li>JS: <code>src/js/tooltip.js</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+                <li>JS: <code>gulp/pug.gulp.js</code></li>
+                <li>SCSS: <code>src/scss/theme/_settings-panel.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/plugins/_echarts.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-vertical.scss</code></li>
+                <li>JSON: <code>gulp/gulp.json</code></li>
+                <li>JSON: <code>package.json</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta4</code> - Bat falcon</h5>
+              <p class="mb-0">15 March, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>public/plugins/Overlayscrollbars.html</code></li>
+                <li>JS: <code>src/js/scrollbar.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Scrollbar plugin updated to OverlayScrollbars from Simplebar.</li>
+                <li>SCSS: <code>src/scss/theme/_functions.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_scrollbar.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-top.scss</code></li>
+                <li>JS: <code>src/js/dropdown-on-hover.js</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Scrollbar on top navbar</li>
+                <li>Other minor bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta3</code> - Pied</h5>
+              <p class="mb-0">9 March, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>public/plugins/simplebar.html </code></li>
+                <li>Page: <code>public/forms/form-wizard.html </code></li>
+                <li>SCSS: <code>src/scss/theme/_form-wizard.scss</code></li>
+                <li>JS: <code>src/js/simplebar.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>src/scss/theme/_functions.scss </code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-vertical.scss </code></li>
+                <li>SCSS: <code>src/scss/theme/mixins/_navbar-vertical.scss</code></li>
+                <li>SCSS: <code>src/scss/theme/_scrollbar.scss </code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss </code></li>
+                <li>SCSS: <code>src/scss/theme/_theme.scss</code></li>
+                <li>JS: <code>src/js/wizard.js</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Scrollbar style</li>
+                <li>Icons jumping issue when navbar collapsed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta2</code> - Greater Kestrels </h5>
+              <p class="mb-0">23 February, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>public/plugins/chartjs.html </code></li>
+                <li>JS: <code>src/js/form-validation.js </code></li>
+                <li>JS: <code>src/js/charts/chart-bar.js </code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Feature: Reposition the settings panel toggler</li>
+                <li>SCSS: <code>src/scss/theme/_settings-panel.scss </code></li>
+                <li>Bootstrap: updated to <strong>bootstrap-beta2 </strong>- <a href="https://getbootstrap.com/docs/5.0/migration/#v500-beta2">see migration</a></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Bootstrap form validation</li>
+                <li>Flatpicker enable in mobile device</li>
+                <li>Dropzone preview icon other file</li>
+                <li>TinyMCE: text color issue in mobile device </li>
+                <li>Some minor issues</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-beta1</code> - Red-necked </h5>
+              <p class="mb-0">02 February, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <div class="alert alert-success" role="alert">
+                <div class="d-flex"><span class="fas fa-exclamation-triangle fs-1"></span>
+                  <div class="flex-1 ms-3">This is a massive update.</div>
+                </div>
+              </div>
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Feature: Redesign navbar-vertical, navbar-top </li>
+                <li>Page: <code>public/documentation/configuration.html </code></li>
+                <li>Page: <code>public/documentation/styling.html </code></li>
+                <li>JS: <code>src/js/dropdown-on-hover.js </code></li>
+                <li>Bootstrap: updated to bootstrap-beta1 - <a href="https://getbootstrap.com/docs/5.0/migration/#v500-beta1">see migration</a></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>src/scss/theme/_navbar-vertical.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar-top.scss  </code></li>
+                <li>SCSS: <code>src/scss/mixins/_navbar-vertical.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_navbar.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_function.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_mixins.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_mixed.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_mixed.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_theme.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme.scss  </code></li>
+                <li>SCSS: <code>src/scss/theme/_variables.scss  </code></li>
+                <li>SCSS: Remove underscore from <code>src/scss/_user.scss  </code></li>
+                <li>JS: <code>src/js/config.js  </code></li>
+                <li>Gulp: <code>gulp/gulp.json  </code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha11</code> - Banded kestrel </h5>
+              <p class="mb-0">17 January, 2021</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Feature: Dark Mood <a href="documentation/customization/dark-mode.html"> (Documentation)</a></li>
+                <li>Introduced CSS variables</li>
+                <li>SCSS: <code>.dark__bg-{colors}</code>, <code>.dark__text-{colors}</code>, <code>.dark</code>, <code>.light</code></li>
+                <li>JS: <code> src/js/theme-control.js</code></li>
+                <li>HTML: Replace all the bootstrap-alpha2 classes with bootstrap-alpha3 classes - <a href="https://getbootstrap.com/docs/5.0/migration/#v500-alpha3">see migration</a></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: Almost all scss file </li>
+                <li>JS: <code>src/js/config.js </code></li>
+                <li>JS: <code>src/js/charts/**/*.js </code></li>
+                <li>JS: <code>src/js/leaflet-active-user.js </code></li>
+                <li>JS: <code>src/js/googleMap.js </code></li>
+                <li>JS: <code>src/js/emoji-button.js </code></li>
+                <li>JS: <code>src/js/list.js </code></li>
+                <li>JS: <code>src/js/utils.js </code></li>
+                <li>JS: <code>src/js/navbar-darken-on-scroll.js </code></li>
+                <li>JS: <code>src/js/progressbar.js </code></li>
+                <li>Gulp: <code>src/gulp/gulp.json </code></li>
+                <li>Gulp: <code>src/gulp/watch.gulp.js </code></li>
+                <li>Gulp: <code>src/gulp/script.gulp.js </code></li>
+                <li>page: <code>public/home/*.html </code></li>
+                <li>page: <code>public/email/*.html </code></li>
+                <li>page: <code>public/authentication/**/*.html </code></li>
+                <li>page: <code>public/calendar.html </code></li>
+                <li>page: <code>public/chat.html </code></li>
+                <li>page: <code>public/kanban.html </code></li>
+                <li>page: <code>public/widgets.html </code></li>
+                <li>page: <code>public/pages/event-create.html</code></li>
+                <li>page: <code>public/pages/event-detail.html</code></li>
+                <li>page: <code>public/pages/invoice.html</code></li>
+                <li>page: <code>public/pages/people.html</code></li>
+                <li>page: <code>public/pages/privacy-policy.html</code></li>
+                <li>page: <code>public/pages/notifications.html</code></li>
+                <li>page: <code>public/utilities/clearfix.html</code></li>
+                <li>page: <code>public/utilities/borders.html</code></li>
+                <li>page: <code>public/utilities/colors.html</code></li>
+                <li>page: <code>public/utilities/embed.html</code></li>
+                <li>page: <code>public/components/background.html</code></li>
+                <li>page: <code>public/components/badges.html</code></li>
+                <li>page: <code>public/components/buttons.html</code></li>
+                <li>page: <code>public/components/toasts.html</code></li>
+                <li>page: <code>public/components/hoverbox.html</code></li>
+                <li>page: <code>public/components/dropdowns.html</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha10</code> - Merlin </h5>
+              <p class="mb-0">11 November, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>page: <code>pages/privacy-policy.html  </code></li>
+                <li>page: <code>pages/faq/faq-basic.html  </code></li>
+                <li>page: <code>pages/faq/faq-alt.html  </code></li>
+                <li>page: <code>pages/faq/faq-accordion.html  </code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>_full-calendar.scss  </code></li>
+                <li>SCSS: <code>_mixed.scss  </code></li>
+                <li>Docs: Add dropcap and text transformation in typography.html </li>
+                <li>Docs: modals.html</li>
+                <li>Docs: tables.html</li>
+                <li>Docs: page-headers.html</li>
+                <li>Page: Add order and customer page links in dashboard-alt.html</li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Progress bar animation</li>
+                <li>Margin bottom in forms and component pages</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha9</code> - Fox kestrel </h5>
+              <p class="mb-0">2 November, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>Add</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Testimonial section in landing page</li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>_colored-link.scss </code></li>
+                <li>SCSS: <code>_browser-support.scss </code></li>
+                <li>SCSS: <code>_button.scss  </code></li>
+                <li>JS:<code> navbar-vertical.js </code></li>
+                <li>Docs: Add brand colors in colors.html </li>
+                <li>Docs: Navbar vertical event</li>
+                <li>Button right align in orders.html</li>
+                <li>Page: <code>checkout.html page</code></li>
+                <li>Page: class name of links in footer of landing.html</li>
+                <li>Class name of dropdown link in navbar top </li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Navbar vertical toggle hover</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha8 </code>- Brown </h5>
+              <p class="mb-0">25 October, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Autocomplete search</li>
+                <li>Component: <code>components/cookie-notice.html</code></li>
+                <li>JS: <code>search.js</code></li>
+                <li>JS: <code>cookie-notice.js</code></li>
+                <li>SCSS: <code>_cookie-notice.scss</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>_search-box.scss</code></li>
+                <li>SCSS: <code>_swiper.scss</code></li>
+                <li>SCSS: Rename <code>_fullcalendar.scss </code>to <code>_full-calendar.scss</code></li>
+                <li>SCSS: <code>_hover.scss</code></li>
+                <li>JS: <code>swiper.js</code></li>
+                <li>JS: <code>list.js</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Swiper slider width issue when navbar vertical collapsed</li>
+                <li>Product slider height with relative to content</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha7 </code>- Spotted kestrel</h5>
+              <p class="mb-0">13 October, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>calendar.html</code></li>
+                <li>Page: <code>authentication/wizard.html</code></li>
+                <li>Page: <code>e-commerce/product-grid.html</code></li>
+                <li>Page: <code>e-commerce/product-details.html</code></li>
+                <li>Plugin: <code>fullCalendar </code>JavaScript plugin</li>
+                <li>Plugin: <code>dayjs </code>JavaScript plugin</li>
+                <li>Plugin: <code>lottie </code>JavaScript plugin</li>
+                <li>Plugin: <code>Swiper </code>JavaScript plugin</li>
+                <li>Plugin: <code>Rater </code>JavaScript plugin</li>
+                <li>SCSS: <code>_fullcalendar.scss</code></li>
+                <li>SCSS: <code>_wizard.scss</code></li>
+                <li>SCSS: <code>_lottie.scss</code></li>
+                <li>SCSS: <code>_rater.scss</code></li>
+                <li>JS: <code>rater.js</code></li>
+                <li>JS: <code>fullcalendar.js</code></li>
+                <li>JS: <code>calendar/index.js</code></li>
+                <li>JS: <code>calendar/events.js</code></li>
+                <li>JS: <code>calendar/template.js</code></li>
+                <li>JS: <code>swiper.js</code></li>
+                <li>JS: <code>wizard.js</code></li>
+                <li>JS: <code>lottie.js</code></li>
+                <li> <code>transform-middle</code>, <code>transform-middle-x</code>, <code>transform-middle-y </code>classes with responsive support</li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Bootstrap to <code>v5.0.0-alpha2 </code></li>
+                <li>Removed <code>t-0</code>, <code>r-0</code>, <code>b-0 </code>, <code>t-0 </code>classes. </li>
+                <li>Removed <code>absolute-centered</code>, <code>absolute-vertical-centered</code>, <code>absolute-sm-vertical-centered </code>classes.</li>
+                <li> <code>.close </code>to <code>.btn-close </code>class.</li>
+                <li>SCSS: <code>_anchor.scss</code></li>
+                <li>SCSS: <code>_variables.scss</code></li>
+                <li>SCSS: <code>_position.scss</code></li>
+                <li>SCSS: <code>_utilities.scss</code></li>
+                <li>SCSS: <code>_mixed.scss</code></li>
+                <li>SCSS: <code>.a-0 </code>to <code>.all-0</code></li>
+                <li>SCSS: <code>_borders.scss</code></li>
+                <li>SCSS: <code>_buttons.scss</code></li>
+                <li>SCSS: Removed<code>.border-2x </code>class.</li>
+                <li>SCSS: Replace<code>.border-{top|right|bottom|left}-2x </code>to <code>.border-{top|right|bottom|left}-2 </code></li>
+                <li>JS: <code>navbar-vertical.js</code></li>
+                <li>JS: <code>echarts.js</code></li>
+                <li>HTML: <code>widget.html</code></li>
+                <li>HTML: Updated source link of <code>flatpickr.js </code>from HTML file</li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Removed <code>_tiny-slider.scss</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha6 </code>- Mauritius kestrel</h5>
+              <p class="mb-0">16 September, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>chat.html</code></li>
+                <li>Page: <code>kanban.html</code></li>
+                <li>Plugin: <code>draggable </code>JavaScript plugin</li>
+                <li>Plugin: <code>Emoji Button </code>JavaScript plugin</li>
+                <li>SCSS: <code>_chat.scss </code></li>
+                <li>SCSS: <code>_kanban.scss</code></li>
+                <li>JS: <code>chat.js</code></li>
+                <li>JS: <code>draggable.js</code></li>
+                <li>JS: <code>emoji-button.js</code></li>
+                <li>JS: <code>kanban.js</code></li>
+                <li>Large border radius of different corners</li>
+                <li>Grays link colors</li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>_variables.scss</code></li>
+                <li>SCSS: <code>_utilities.scss</code></li>
+                <li>SCSS: <code>_hover.scss</code></li>
+                <li>SCSS: <code>_mixed.scss</code></li>
+                <li>SCSS: Rename <code>_pointer.scss </code>to <code>_cursor.scss</code></li>
+                <li>Utilities: <code>border.html</code></li>
+                <li>Utilities: <code>colored-link.html</code></li>
+                <li> <code>package.json</code></li>
+              </ul>
+              <h6>Fix </h6>
+              <ul class="bullet-inside ps-0">
+                <li>Negative margin issue</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha5</code>- Eurasian hobby</h5>
+              <p class="mb-0">9 September, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>e-commerce/checkout.html</code></li>
+                <li>Page: <code>e-commerce/customers.html</code></li>
+                <li>Page: <code>e-commerce/orders.html</code></li>
+                <li>Page: <code>e-commerce/product-list.html</code></li>
+                <li>Page: <code>e-commerce/shopping-cart.html</code></li>
+                <li>Plugin: <code>List.js </code>JavaScript plugin</li>
+                <li>Layout: <strong>Navbar Top</strong></li>
+                <li>Layout: <strong>Navbar Combo</strong></li>
+                <li>Navbar Vertical Variations</li>
+                <li>JS: <code>navbar-combo.js</code></li>
+                <li>JS: <code>list.js</code></li>
+                <li>JS: <code>quantity.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Improve Pug codes</li>
+                <li>JS: <code>demo-mode.js</code></li>
+                <li>SCSS: <code>_navbar-vertical.scss</code></li>
+                <li>SCSS: <code>_mixed.scss</code></li>
+                <li>SCSS: <code>_variables.scss</code></li>
+                <li>SCSS: <code>_functions.scss</code></li>
+                <li>SCSS: <code>_mixins.scss</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"> <code class="fw-bold fs-1">v3.0.0-alpha4 </code>- Seychelles kestrel</h5>
+              <p class="mb-0">24 August, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>home/landing.html</code></li>
+                <li>Page: <code>email/inbox.html</code></li>
+                <li>Page: <code>email/email-details.html</code></li>
+                <li>Page: <code>email/compose.html</code></li>
+                <li>Authentication: Split Layout</li>
+                <li>Plugin: <code>type.js </code>JavaScript plugin</li>
+                <li>Plugin: <code>tinymce.js </code>JavaScript plugin</li>
+                <li>JS: <code>bulk-select.js</code></li>
+                <li>JS: <code>navbar-darken-on-scroll.js</code></li>
+                <li>JS: <code>node.js</code></li>
+                <li>JS: <code>scroll-to-top.js</code></li>
+                <li>JS: <code>tinymce.js</code></li>
+                <li>JS: <code>typed.js</code></li>
+                <li>SCSS:<code> _landing.scss</code></li>
+                <li>SCSS: <code>_navbar-standard.scss</code></li>
+                <li>SCSS: <code>plugins/_tinymce.scss</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>_mixed.scss</code></li>
+                <li>SCSS: <code>_variables.scss</code></li>
+                <li>SCSS: <code>_hover.scss</code></li>
+              </ul>
+              <h6>Fix</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Scroll padding top issue</li>
+                <li>Switch input color</li>
+                <li>Popover file location from node_modules</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"><code class="fw-bold fs-1">v3.0.0-alpha3</code> - Malagasy's kestrel</h5>
+              <p class="mb-0">13 August, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Settings Panel</li>
+                <li>Page: <code>dashboard-alt.html</code></li>
+                <li>Page: <code>event-create.html</code></li>
+                <li>Page: <code>event-detail.html</code></li>
+                <li>Page: <code>InvitePeople.html</code></li>
+                <li>Page: <code>invoice.html</code></li>
+                <li>Page: <code>pricing.html</code></li>
+                <li>Page: <code>pricing-alt.html</code></li>
+                <li>Plugin: <code>CountUp.js </code></li>
+                <li>Plugin: <code>Choices</code></li>
+                <li>Plugin: <code>Dropzone</code></li>
+                <li>Plugin: <code>Leaflet</code></li>
+                <li>Plugin: <code>Google Map </code></li>
+                <li>JS: <code>config.js</code></li>
+                <li>JS: <code>demo-mode.js</code></li>
+                <li>JS: <code>dropzone.js</code></li>
+                <li>JS: <code>choices.js</code></li>
+                <li>JS: <code>countup.js</code></li>
+                <li>JS: <code>settings-panel.js</code></li>
+                <li>JS: <code>googleMap.js</code></li>
+                <li>JS: <code>copy-link.js</code></li>
+                <li>JS: <code>charts/chart-line-payment.js</code></li>
+                <li>JS: <code>charts/chart-real-time-user.js</code></li>
+                <li>SCSS: <code>plugins/_choices.scss</code></li>
+                <li>SCSS: <code>plugins/_dropzone.scss</code></li>
+                <li>SCSS: <code>plugins/_glightbox.scss</code></li>
+                <li>SCSS: <code>plugins/_leaflet.scss</code></li>
+                <li>Design File(Figma)</li>
+                <li> <code>README.md</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>JS: <code>utils.js</code></li>
+                <li>JS: <code>navbar-vertical.js</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"><code class="fw-bold fs-1">v3.0.0-alpha2</code> - Dickinson's kestrel</h5>
+              <p class="mb-0">6 August, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <h6>New</h6>
+              <ul class="bullet-inside ps-0">
+                <li>Page: <code>feed.html</code></li>
+                <li>Page: <code>billing.html</code></li>
+                <li>Plugin: <code>glightbox</code></li>
+                <li>Plugin: <code>Plyr</code></li>
+                <li>SCSS: <code>_plyr.scss</code></li>
+                <li>JS: <code>glightbox.js</code></li>
+                <li>JS: <code>plyr.js</code></li>
+              </ul>
+              <h6>Update</h6>
+              <ul class="bullet-inside ps-0">
+                <li>SCSS: <code>_flex.scss</code></li>
+                <li>SCSS:<code>_dropdown.scss</code></li>
+                <li>SCSS:<code>_position.scss</code></li>
+                <li>JS: <code>src/js/theme.js</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-2"><code class="fw-bold fs-1">3-alpha</code> - Initial Release</h5>
+              <p class="mb-0">24 July, 2020</p>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Nothing to see here.</p>
+            </div>
+          </div>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+    <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3 class="mb-0">Gulp</h3>
+                </div>
+              </div>
+            </div>
+    <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">To start your project run:</h5>
+            </div>
+            <div class="card-body bg-light"><code class="fs-2 border rounded-1 py-2 px-3 d-block border-300 bg-white">gulp</code>
+              <p class="mt-4">The <code>gulp</code> command will build, serve and watch the project with the following gulp tasks:</p>
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="bg-300 text-center font-sans-serif">
+                    <tr>
+                      <th class="text-nowrap">Task</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-nowrap"><code>clean</code></td>
+                      <td>Delete the following directories:
+                        <pre><code class="lang-html">public/assets/css
+public/assets/js
+public/vendors // packages which are included in vendors.json
+public/**/*.html
+</code></pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>style</code></td>
+                      <td>Compiles <code>scss/theme.scss</code> and generates <code>theme.css, theme.min.css, theme-rlt.css, theme-rtl.min.css</code> and <code>theme.css.map, theme.min.css.map, theme-rlt.css.map, theme-rtl.min.css.map</code> to the <code>public/assets/css/ </code> directory.</td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>script</code></td>
+                      <td>Concat the <code>js</code> files from <code>src/js/</code> and transpiles with babel to <code>theme.js</code>, <code>theme.min.js</code> to the <code>public/assets/js/</code> directory.</td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>compile</code></td>
+                      <td>Compiles all the <code>js, </code><code>scss, </code><code>pug </code>files from the <code>src</code> directory.</td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>vendor</code></td>
+                      <td>Runs <code>vendor:clean</code> and <code>vendor:move</code> in series.</td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>vendor:clean</code></td>
+                      <td>Delete the vendors from <code>public/vendors</code> directory which are included in <code>vendors.json</code>.</td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>vendor:move</code></td>
+                      <td>Copies the vendors from <code>node_modules/</code> directory to <code>public/vendors</code> directory according to the <code>vendors.json</code>.</td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>watch</code></td>
+                      <td>All of the following folders are monitored for changes, which will tell the browser to reload automatically after any changes are made:
+                        <pre><code class="lang-html">public/assets/img
+public/assets/fonts
+public/assets/video
+public/vendors/
+src/pug 
+src/scss
+src/js</code></pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>build</code></td>
+                      <td>Will delete previous build directory and generate a new compressed version to deploy
+                        <pre><code class="lang-html">build/assets/img
+build/assets/fonts
+build/assets/video
+build/assets/css
+build/assets/js
+build/vendors/
+build/**/*.html
+</code></pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-nowrap"><code>build:test</code></td>
+                      <td>Will run the build version in port:3000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+{% endblock %}

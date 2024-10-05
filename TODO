@@ -1,0 +1,13 @@
+Frequently Asked Questions (Below you'll find answers to the questions we get
+asked the most about to join with Falcon) site settings -> faq_title
+model ->
+    title
+    description
+
+model ->
+    title
+    description -> Ckditor5
+
+model ->
+    questions
+    description

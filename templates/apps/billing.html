@@ -1,0 +1,50 @@
+{% extends 'apps/base_include/base..html' %}
+
+{% load static %}
+{% block body %}
+    <div class="card mb-3">
+        <div class="bg-holder d-none d-lg-block bg-card"
+             style="background-image:url({% static 'apps/assets/img/icons/spot-illustrations/corner-4.png' %});">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="card-body position-relative">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3>Get started with your free trial</h3>
+                    <p class="mt-2">Premium team - 5 Seats. Free for 30 days, cancel at any time. <br/>$6.25 / seat
+                        month after a trial</p>
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle ps-0 btn-sm" id="change-plan" type="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change plan
+                        </button>
+                        <div class="dropdown-menu py-3" aria-labelledby="change-plan" style="min-width: 15rem;">
+                            <div class="dropdown-item px-3 py-2"><span
+                                    class="d-flex justify-content-between fs--1 text-black"><span class="fw-semi-bold">Standard License</span><span>$59.00</span></span>
+                                <ul class="list-unstyled ps-1 my-2 fs--1">
+                                    <li><span class="fas fa-circle" data-fa-transform="shrink-11"></span><span
+                                            class="ms-1">Use for a single product</span></li>
+                                    <li><span class="fas fa-circle" data-fa-transform="shrink-11"></span><span
+                                            class="ms-1">Non-paying users only</span></li>
+                                </ul>
+                                <p class="fs--2 mb-0">Read the full <a href="#!">Standard License </a></p>
+                            </div>
+                            <div class="dropdown-divider my-0"></div>
+                            <div class="dropdown-item px-3 py-2"><span
+                                    class="d-flex justify-content-between fs--1 text-black"><span class="fw-semi-bold">Extended License</span><span>$99.00</span></span>
+                                <ul class="list-unstyled ps-1 my-2 fs--1">
+                                    <li><span class="fas fa-circle" data-fa-transform="shrink-11"></span><span
+                                            class="ms-1">Unlimited websites</span></li>
+                                    <li><span class="fas fa-circle" data-fa-transform="shrink-11"></span><span
+                                            class="ms-1">Paying users allowed</span></li>
+                                </ul>
+                                <p class="fs--2 mb-0">Read the full <a href="#!">Extended License</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+{% endblock %}

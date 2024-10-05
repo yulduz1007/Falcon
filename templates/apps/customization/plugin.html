@@ -1,0 +1,244 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+          <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Plugin</h3>
+                </div>
+              </div>
+            </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Simple approach(without npm)</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Place your new plugin in <code>public/vendors</code> folder. Eg: to add the <code>flatpickr</code> plugin, we will download it from <a href="https://flatpickr.js.org/" target="_blank">here,</a> unzip it and place the <code>flatpickr-master</code> folder in <code>public/vendors</code> folder. You can now simply link the plugin files to your HTML and use them.</p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Using npm</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p>Suppose we are installing the <code>flatpickr</code> plugin. Here are the steps:</p>
+              <p class="fw-bold font-sans-serif mb-0">Step 1:</p>
+              <p>run npm command for install plugin. for <code>flatpickr </code>we can run </p>
+              <Pre> <code class="lang-js">npm i flatpickr</code></Pre>
+              <p class="fw-bold font-sans-serif mb-0 mt-3">Step 2:</p>
+              <p>Go to <code>vendors.json </code>file and give the path directory from node_modules as follow</p>
+              <pre><code class="language-js">&quot;flatpickr&quot;: {
+	&quot;src&quot;: [&quot;dist/flatpickr.min.js&quot;, &quot;dist/flatpickr.min.css&quot;],
+	&quot;dest&quot;: &quot;flatpickr&quot;
+}</code></pre>
+              <p>Here, <code>dest</code> refers to <code>public/vendors/</code>, where gulp will copy files from the <code>flatpickr</code> plugin. We actually use the <code>vendors</code> folder to store neccassary plugins. And all the plugins folder name will be as we give the dest value</p>
+              <p class="fw-bold font-sans-serif mb-0 mt-3">Step 3:</p>
+              <p>Run the following command:</p>
+              <pre><code class="lang-js">gulp vendor:move</code></pre>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="bg-holder d-none d-lg-block bg-card" style="background-image:url(../../assets/img/icons/spot-illustrations/corner-4.png);">
+            </div>
+            <!--/.bg-holder-->
+
+            <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Built-in plugins</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Anchor.js</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A JavaScript utility for adding deep anchor links to existing page content. AnchorJS is lightweight, accessible, and has no dependencies.</p><a class="font-sans-serif" href="../../modules/components/anchor.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://www.bryanbraun.com/anchorjs/#basic-usage" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Choices</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Choices.js is a lightweight, configurable select box/text input plugin. Similar to Select2 and Selectize but without the jQuery dependency</p><a class="font-sans-serif" href="../../modules/forms/advance/advance-select.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://github.com/jshjohnson/Choices" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">CountUp</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">CountUp.js is a dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way.</p><a class="font-sans-serif" href="../../modules/components/countup.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://github.com/inorganik/CountUp.js" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Dayjs</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Day.js 2KB immutable date-time library alternative to Moment.js with the same modern API.</p><a class="font-sans-serif" href="https://day.js.org/docs/en/installation/installation" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Draggable.js</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A lightweight, responsive, modern drag & drop library.</p><a class="font-sans-serif" href="../../modules/components/draggable.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://shopify.github.io/draggable/docs/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Dropzone</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">DropzoneJS is an open-source library that provides drag & drop file uploads with image previews.</p><a class="font-sans-serif" href="../../modules/forms/advance/file-uploader.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://www.dropzonejs.com/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Echarts.js</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A powerful, interactive charting and visualization library for browser.</p><a class="font-sans-serif" href="../../modules/charts/echarts/how-to-use.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://echarts.apache.org/en/option.html" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Emoji Button</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Vanilla JavaScript emoji picker component.</p><a class="font-sans-serif" href="../../modules/forms/advance/emoji-button.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://emoji-button.js.org/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Flatpickr</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Lightweight, powerful javascript datetimepicker with no dependencies.</p><a class="font-sans-serif" href="../../modules/forms/advance/date-picker.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://flatpickr.js.org/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">FontAwesome 5</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit.</p><a class="font-sans-serif" href="https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">FullCalendar</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Full-sized drag &amp; drop event calendar.</p><a class="font-sans-serif" href="../../modules/components/calendar.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://fullcalendar.io/docs" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Glightbox</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Glightbox is a pure javascript lightbox. It can display images, iframes, inline content and videos with optional autoplay for YouTube, Vimeo and even self hosted videos.</p><a class="font-sans-serif" href="../../modules/components/pictures/lightbox.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://github.com/biati-digital/glightbox" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Google Map</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Falcon uses Google map with Snazzy Maps, with different color schemes aimed towards web designers and developers.</p><a class="font-sans-serif" href="../../modules/maps/google-map.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Is.js</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Micro check plugin. Check types, regexps, presence, time and more...</p><a class="font-sans-serif" href="http://is.js.org/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Leaflet Map</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">JavaScript library for mobile-friendly interactive maps</p><a class="font-sans-serif" href="../../modules/maps/leaflet-map.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://leafletjs.com/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">List.js</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Tiny, invisible and simple, yet powerful and incredibly fast vanilla JavaScript that adds search, sort, filters and flexibility to plain HTML lists, tables, or anything.</p><a class="font-sans-serif" href="../../modules/tables/advance-tables.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://listjs.com/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Lodash</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A modern JavaScript utility library delivering modularity, performance, &amp; extras.</p><a class="font-sans-serif" href="https://lodash.com" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Lottie Web</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Render After Effects animations natively on Web, Android, and iOS, and React Native.</p><a class="font-sans-serif" href="../../modules/components/animated-icons.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://github.com/airbnb/lottie-web" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Overlay Scrollbars</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A javascript scrollbar plugin which hides native scrollbars, provides custom styleable overlay scrollbars and keeps the native functionality and feeling.</p><a class="font-sans-serif" href="../../modules/utilities/overlayscrollbars.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://kingsora.github.io/OverlayScrollbars/#!documentation" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Plyr</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A simple, lightweight, accessible and customizable HTML5, YouTube and Vimeo media player that supports modern browsers.</p><a class="font-sans-serif" href="../../modules/components/videos/plyr.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://github.com/sampotts/plyr/blob/master/README.md" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Rater</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Star rating widget for the browser. Unlimited number of stars. No dependencies. No Jquery required.</p><a class="font-sans-serif" href="../../modules/forms/advance/rating.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://fredolss.github.io/rater-js/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Swiper</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps.</p><a class="font-sans-serif" href="../../modules/components/carousel/swiper.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://swiperjs.com" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Tinymce</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">The world's most popular JavaScript library for rich text editing.</p><a class="font-sans-serif" href="../../modules/forms/advance/editor.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://www.tiny.cloud/docs/quick-start/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h5 class="mb-0" data-anchor="data-anchor">Typed Text</h5>
+            </div>
+            <div class="card-body bg-light">
+              <p class="mb-0">A JavaScript library that types out, deletes them, and then types again.</p><a class="font-sans-serif" href="../../modules/components/typed-text.html">Implementation in theme</a> - <a class="font-sans-serif" href="https://mattboldt.com/demos/typed-js/" target="_blank">Full Documentation</a>
+            </div>
+          </div>
+{% endblock %}

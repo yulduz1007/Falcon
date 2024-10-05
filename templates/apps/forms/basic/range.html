@@ -1,0 +1,89 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+    <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Range</h3>
+                  <p class="mb-0">Use our custom range inputs for consistent cross-browser styling and built-in customization.</p><a class="btn btn-link btn-sm ps-0 mt-2" href="https://getbootstrap.com/docs/5.1/forms/range" target="_blank">Range on Bootstrap<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Overview</h5>
+                  <p class="mb-0 mt-2 mb-0">Create custom <code>input type="range"</code> controls with <code>.form-range</code>. The track (the background) and thumb (the value) are both styled to appear the same across browsers. As only Firefox supports “filling” their track from the left or right of the thumb as a means to visually indicate progress, we do not currently support it.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-161fd70a-dad5-4d01-95d9-03d3d6eda846" type="button" role="tab" aria-controls="dom-161fd70a-dad5-4d01-95d9-03d3d6eda846" aria-selected="true" id="tab-dom-161fd70a-dad5-4d01-95d9-03d3d6eda846">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-749ce195-f93a-436f-9a93-e62a6575b1e9" type="button" role="tab" aria-controls="dom-749ce195-f93a-436f-9a93-e62a6575b1e9" aria-selected="false" id="tab-dom-749ce195-f93a-436f-9a93-e62a6575b1e9">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-161fd70a-dad5-4d01-95d9-03d3d6eda846" id="dom-161fd70a-dad5-4d01-95d9-03d3d6eda846">
+                  <label class="form-label" for="customRange1">Example range</label>
+                  <input class="form-range" id="customRange1" type="range" />
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-749ce195-f93a-436f-9a93-e62a6575b1e9" id="dom-749ce195-f93a-436f-9a93-e62a6575b1e9">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;label class=&quot;form-label&quot; for=&quot;customRange1&quot;&gt;Example range&lt;/label&gt;
+&lt;input class=&quot;form-range&quot; id=&quot;customRange1&quot; type=&quot;range&quot; /&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Min and max</h5>
+                  <p class="mb-0 mt-2 mb-0">Range inputs have implicit values for <code>min</code> and <code>max</code>—<code>0</code> and <code>100</code>, respectively. You may specify new values for those using the <code>min</code> and <code>max</code> attributes.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-72ee6a0e-763a-425e-88da-2cbf244a71b7" type="button" role="tab" aria-controls="dom-72ee6a0e-763a-425e-88da-2cbf244a71b7" aria-selected="true" id="tab-dom-72ee6a0e-763a-425e-88da-2cbf244a71b7">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-95da428d-4648-4cdd-9d50-ccb6ff66ba5c" type="button" role="tab" aria-controls="dom-95da428d-4648-4cdd-9d50-ccb6ff66ba5c" aria-selected="false" id="tab-dom-95da428d-4648-4cdd-9d50-ccb6ff66ba5c">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-72ee6a0e-763a-425e-88da-2cbf244a71b7" id="dom-72ee6a0e-763a-425e-88da-2cbf244a71b7">
+                  <label class="form-label" for="customRange2">Example range</label>
+                  <input class="form-range" id="customRange2" type="range" min="0" max="5" />
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-95da428d-4648-4cdd-9d50-ccb6ff66ba5c" id="dom-95da428d-4648-4cdd-9d50-ccb6ff66ba5c">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;label class=&quot;form-label&quot; for=&quot;customRange2&quot;&gt;Example range&lt;/label&gt;
+&lt;input class=&quot;form-range&quot; id=&quot;customRange2&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;5&quot; /&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+    <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Steps</h5>
+                  <p class="mb-0 mt-2 mb-0">By default, range inputs “snap” to integer values. To change this, you can specify a <code>step</code> value. In the example below, we double the number of steps by using <code>step="0.5"</code>.</p>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1 mt-2" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-79b91436-954c-4f1b-9ce4-136ce264a963" type="button" role="tab" aria-controls="dom-79b91436-954c-4f1b-9ce4-136ce264a963" aria-selected="true" id="tab-dom-79b91436-954c-4f1b-9ce4-136ce264a963">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-33689230-600a-4105-a8a0-86f509f1aedf" type="button" role="tab" aria-controls="dom-33689230-600a-4105-a8a0-86f509f1aedf" aria-selected="false" id="tab-dom-33689230-600a-4105-a8a0-86f509f1aedf">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-79b91436-954c-4f1b-9ce4-136ce264a963" id="dom-79b91436-954c-4f1b-9ce4-136ce264a963">
+                  <label class="form-label" for="customRange3">Example range</label>
+                  <input class="form-range" id="customRange3" type="range" min="0" max="5" step="0.5" />
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-33689230-600a-4105-a8a0-86f509f1aedf" id="dom-33689230-600a-4105-a8a0-86f509f1aedf">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;label class=&quot;form-label&quot; for=&quot;customRange3&quot;&gt;Example range&lt;/label&gt;
+&lt;input class=&quot;form-range&quot; id=&quot;customRange3&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;5&quot; step=&quot;0.5&quot; /&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+{% endblock %}

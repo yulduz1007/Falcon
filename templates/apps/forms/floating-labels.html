@@ -1,0 +1,163 @@
+{% extends "apps/base_include/base..html" %}
+{% block body %}
+ <div class="card-body position-relative">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>Floating labels</h3>
+                  <p class="mb-0">Create beautifully simple form labels that float over your input fields.</p><a class="btn btn-link btn-sm ps-0 mt-2" href="https://getbootstrap.com/docs/5.1/forms/floating-labels" target="_blank">Floating labels on Bootstrap<span class="fas fa-chevron-right ms-1 fs--2"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Example</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-3174a9fa-db90-48e1-8c09-14225a9839bd" type="button" role="tab" aria-controls="dom-3174a9fa-db90-48e1-8c09-14225a9839bd" aria-selected="true" id="tab-dom-3174a9fa-db90-48e1-8c09-14225a9839bd">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-640e61c6-147b-4a69-8701-f19ae4dd7eef" type="button" role="tab" aria-controls="dom-640e61c6-147b-4a69-8701-f19ae4dd7eef" aria-selected="false" id="tab-dom-640e61c6-147b-4a69-8701-f19ae4dd7eef">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-3174a9fa-db90-48e1-8c09-14225a9839bd" id="dom-3174a9fa-db90-48e1-8c09-14225a9839bd">
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com" />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control" id="floatingPassword" type="password" placeholder="Password" />
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-640e61c6-147b-4a69-8701-f19ae4dd7eef" id="dom-640e61c6-147b-4a69-8701-f19ae4dd7eef">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;form-floating mb-3&quot;&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;floatingInput&quot; type=&quot;email&quot; placeholder=&quot;name@example.com&quot; /&gt;
+  &lt;label for=&quot;floatingInput&quot;&gt;Email address&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-floating&quot;&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;floatingPassword&quot; type=&quot;password&quot; placeholder=&quot;Password&quot; /&gt;
+  &lt;label for=&quot;floatingPassword&quot;&gt;Password&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Form Validation</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-e0e7df23-f62d-43da-bb63-edacf011344c" type="button" role="tab" aria-controls="dom-e0e7df23-f62d-43da-bb63-edacf011344c" aria-selected="true" id="tab-dom-e0e7df23-f62d-43da-bb63-edacf011344c">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-64e18e7a-faf4-4374-af37-b9816112ac02" type="button" role="tab" aria-controls="dom-64e18e7a-faf4-4374-af37-b9816112ac02" aria-selected="false" id="tab-dom-64e18e7a-faf4-4374-af37-b9816112ac02">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-e0e7df23-f62d-43da-bb63-edacf011344c" id="dom-e0e7df23-f62d-43da-bb63-edacf011344c">
+                  <div class="form-floating mb-3">
+                    <input class="form-control is-valid" id="floatingInputValid" type="email" placeholder="name@example.com" value="test@example.com" />
+                    <label for="floatingInputValid">Valid input</label>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control is-invalid" id="floatingInputInvalid" type="email" placeholder="name@example.com" value="test@example.com" />
+                    <label for="floatingInputInvalid">Invalid input</label>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-64e18e7a-faf4-4374-af37-b9816112ac02" id="dom-64e18e7a-faf4-4374-af37-b9816112ac02">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;form-floating mb-3&quot;&gt;
+  &lt;input class=&quot;form-control is-valid&quot; id=&quot;floatingInputValid&quot; type=&quot;email&quot; placeholder=&quot;name@example.com&quot; value=&quot;test@example.com&quot; /&gt;
+  &lt;label for=&quot;floatingInputValid&quot;&gt;Valid input&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-floating&quot;&gt;
+  &lt;input class=&quot;form-control is-invalid&quot; id=&quot;floatingInputInvalid&quot; type=&quot;email&quot; placeholder=&quot;name@example.com&quot; value=&quot;test@example.com&quot; /&gt;
+  &lt;label for=&quot;floatingInputInvalid&quot;&gt;Invalid input&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Textarea</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-3a26df37-6fad-4319-9199-f5ac24eab635" type="button" role="tab" aria-controls="dom-3a26df37-6fad-4319-9199-f5ac24eab635" aria-selected="true" id="tab-dom-3a26df37-6fad-4319-9199-f5ac24eab635">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-11b43c35-e0ed-4a52-ba0f-5d8e81ff9c37" type="button" role="tab" aria-controls="dom-11b43c35-e0ed-4a52-ba0f-5d8e81ff9c37" aria-selected="false" id="tab-dom-11b43c35-e0ed-4a52-ba0f-5d8e81ff9c37">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-3a26df37-6fad-4319-9199-f5ac24eab635" id="dom-3a26df37-6fad-4319-9199-f5ac24eab635">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="floatingTextarea2" placeholder="Leave a comment here" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-11b43c35-e0ed-4a52-ba0f-5d8e81ff9c37" id="dom-11b43c35-e0ed-4a52-ba0f-5d8e81ff9c37">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;form-floating&quot;&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;floatingTextarea2&quot; placeholder=&quot;Leave a comment here&quot; style=&quot;height: 100px&quot;&gt;&lt;/textarea&gt;
+  &lt;label for=&quot;floatingTextarea2&quot;&gt;Comments&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="card-header">
+              <div class="row flex-between-end">
+                <div class="col-auto align-self-center">
+                  <h5 class="mb-0" data-anchor="data-anchor">Selects</h5>
+                </div>
+                <div class="col-auto ms-auto">
+                  <div class="nav nav-pills nav-pills-falcon flex-grow-1" role="tablist">
+                    <button class="btn btn-sm active" data-bs-toggle="pill" data-bs-target="#dom-a94b4485-4eb5-4f06-be95-a4c7cfb570bc" type="button" role="tab" aria-controls="dom-a94b4485-4eb5-4f06-be95-a4c7cfb570bc" aria-selected="true" id="tab-dom-a94b4485-4eb5-4f06-be95-a4c7cfb570bc">Preview</button>
+                    <button class="btn btn-sm" data-bs-toggle="pill" data-bs-target="#dom-40ec9ba8-149a-4f7a-8892-d8b8ffaec9d2" type="button" role="tab" aria-controls="dom-40ec9ba8-149a-4f7a-8892-d8b8ffaec9d2" aria-selected="false" id="tab-dom-40ec9ba8-149a-4f7a-8892-d8b8ffaec9d2">Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body bg-light">
+              <div class="tab-content">
+                <div class="tab-pane preview-tab-pane active" role="tabpanel" aria-labelledby="tab-dom-a94b4485-4eb5-4f06-be95-a4c7cfb570bc" id="dom-a94b4485-4eb5-4f06-be95-a4c7cfb570bc">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected="">Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label for="floatingSelect">Works with selects</label>
+                  </div>
+                </div>
+                <div class="tab-pane code-tab-pane" role="tabpanel" aria-labelledby="tab-dom-40ec9ba8-149a-4f7a-8892-d8b8ffaec9d2" id="dom-40ec9ba8-149a-4f7a-8892-d8b8ffaec9d2">
+                  <pre class="scrollbar rounded-1" style="max-height:420px"><code class="language-html">&lt;div class=&quot;form-floating&quot;&gt;
+  &lt;select class=&quot;form-select&quot; id=&quot;floatingSelect&quot; aria-label=&quot;Floating label select example&quot;&gt;
+    &lt;option selected=&quot;&quot;&gt;Open this select menu&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;label for=&quot;floatingSelect&quot;&gt;Works with selects&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+          <footer class="footer">
+            <div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">Thank you for creating with Falcon <span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2021 &copy; <a href="https://themewagon.com">Themewagon</a></p>
+              </div>
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">v3.4.0</p>
+              </div>
+            </div>
+          </footer>
+{% endblock %}
